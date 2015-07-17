@@ -16,10 +16,10 @@
 {
     NSArray* _Barcelona;
     NSMutableArray* _gK;
-    NSArray* _dF;
-    NSArray* _mF;
-    NSArray* _fW;
-    NSArray* _teamStart;
+    NSMutableArray* _dF;
+    NSMutableArray* _mF;
+    NSMutableArray* _fW;
+    NSMutableArray* _teamStart;
 }
 
 - (void)viewDidLoad {
@@ -52,24 +52,61 @@
     _Barcelona = @[stegen, pique, rakitic, busquets, rodrigues, iniesta, suarez, messi, neymar, rafinha, bravo, mascherano, bartra, douglas, alba, roberto, adriano, alves, vermaelen, mathieu, masip, song, turan, vidal];
     [self setListOfPosition];
     
+    _teamStart = [NSMutableArray new];
+    //choose GK
+    [self getPlayerForLine:_gK withNumber:1];
     
+    //choose DF
+    [self getPlayerForLine:_dF withNumber:4];
+    
+    //choose MF
+    [self getPlayerForLine:_mF withNumber:3];
+    
+    //choose FW
+    [self getPlayerForLine:_fW withNumber:3];
+    
+    //show team
+    [self showListTeamStart];
+    NSLog(@"");
 }
 
 - (void)setListOfPosition{
+    _gK = [NSMutableArray new];
+    _dF = [NSMutableArray new];
+    _mF = [NSMutableArray new];
+    _fW = [NSMutableArray new];
     for (Player *player in _Barcelona) {
-        NSLog(@"%@",player.pPosition);
         if([player.pPosition isEqualToString:@"GK"]){
-            [_gK arrayByAddingObject:player];
+            [_gK addObject:player];
         }
         else if ([player.pPosition isEqualToString:@"DF"]){
-            [_dF arrayByAddingObject:player];
+            [_dF addObject:player];
         }
         else if ([player.pPosition isEqualToString:@"MF"]){
-            [_mF arrayByAddingObject:player];
+            [_mF addObject:player];
         }
         else{
-            [_fW arrayByAddingObject:player];
+            [_fW addObject:player];
         }
+    }
+}
+
+- (void)getPlayerForLine:(NSMutableArray *)list withNumber:(int)number{
+    if(list != nil && list.count >= number){
+        for(int i = 0; i < number; i++){
+            id object = list[arc4random_uniform((int)list.count)];
+            while ([_teamStart containsObject:object]) {
+                object = _fW[arc4random_uniform((int)list.count)];
+            }
+            [_teamStart addObject:object];
+        }
+    }
+}
+
+- (void)showListTeamStart{
+    for(int i = 0; i < _teamStart.count; i++){
+        Player* player = (Player*)_teamStart[i];
+        [self writeln:[NSString stringWithFormat:@"%2d - %@ - %@",player.pNumber, player.pPosition, player.pName]];
     }
 }
 
