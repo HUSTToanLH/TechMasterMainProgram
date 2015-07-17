@@ -18,6 +18,8 @@
 		03C9EDDD1B576DC5007C0F9D /* darkBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C9EDDB1B576DC5007C0F9D /* darkBall.png */; };
 		03C9EDDE1B576DC5007C0F9D /* lightball.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C9EDDC1B576DC5007C0F9D /* lightball.png */; };
 		03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C9EDE31B578456007C0F9D /* ZigZag.m */; };
+		03C9EDE81B589673007C0F9D /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C9EDE71B589673007C0F9D /* Collection.m */; };
+		03C9EDEE1B58E712007C0F9D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C9EDED1B58E712007C0F9D /* Player.m */; };
 		03F36B911B5600B900E9C812 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F36B901B5600B900E9C812 /* chat.png */; };
 		03F6B5241B54A53F00E9B3FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5231B54A53F00E9B3FE /* main.m */; };
 		03F6B52F1B54A53F00E9B3FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B52E1B54A53F00E9B3FE /* Images.xcassets */; };
@@ -52,6 +54,10 @@
 		03C9EDDC1B576DC5007C0F9D /* lightball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightball.png; sourceTree = "<group>"; };
 		03C9EDE21B578456007C0F9D /* ZigZag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZigZag.h; sourceTree = "<group>"; };
 		03C9EDE31B578456007C0F9D /* ZigZag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZigZag.m; sourceTree = "<group>"; };
+		03C9EDE61B589673007C0F9D /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		03C9EDE71B589673007C0F9D /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		03C9EDEC1B58E712007C0F9D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		03C9EDED1B58E712007C0F9D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		03F36B901B5600B900E9C812 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		03F6B51E1B54A53F00E9B3FE /* TechMasterMainProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMasterMainProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F6B5221B54A53F00E9B3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +101,17 @@
 			name = RunningLEDImage;
 			sourceTree = "<group>";
 		};
+		03C9EDE51B5895BF007C0F9D /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				03C9EDE61B589673007C0F9D /* Collection.h */,
+				03C9EDE71B589673007C0F9D /* Collection.m */,
+				03C9EDEC1B58E712007C0F9D /* Player.h */,
+				03C9EDED1B58E712007C0F9D /* Player.m */,
+			);
+			name = Array;
+			sourceTree = "<group>";
+		};
 		03F6B5151B54A53F00E9B3FE = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +131,7 @@
 		03F6B5201B54A53F00E9B3FE /* TechMasterMainProgram */ = {
 			isa = PBXGroup;
 			children = (
+				03C9EDE51B5895BF007C0F9D /* Array */,
 				03F6B5541B54A70F00E9B3FE /* Basic */,
 				03F6B5471B54A5F500E9B3FE /* Core */,
 				03F6B52E1B54A53F00E9B3FE /* Images.xcassets */,
@@ -272,12 +290,14 @@
 				03C08A7F1B5762FA005BDCC8 /* IAmRich.m in Sources */,
 				03F6B5531B54A61A00E9B3FE /* MainScreen.m in Sources */,
 				03C08A841B576868005BDCC8 /* RunningLED.m in Sources */,
+				03C9EDEE1B58E712007C0F9D /* Player.m in Sources */,
 				03F6B5521B54A61A00E9B3FE /* ConsoleScreen.m in Sources */,
 				03F6B5501B54A61A00E9B3FE /* AppDelegate.m in Sources */,
 				03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */,
 				03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */,
 				03F6B5241B54A53F00E9B3FE /* main.m in Sources */,
 				03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */,
+				03C9EDE81B589673007C0F9D /* Collection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
