@@ -16,8 +16,11 @@
     MainScreen* mainScreen = [[MainScreen alloc] initWithStyle:UITableViewStyleGrouped];
     //--------- From this line, please customize your menu data -----------
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
-                                    @{TITLE: @"Basic A", CLASS: @"BasicA"},
-                                    @{TITLE: @"Basic B", CLASS: @"BasicB"}
+                                    @{TITLE: @"IAmRich", CLASS: @"IAmRich"},
+                                    @{TITLE: @"IWeather", CLASS: @"IWeather"},
+                                    @{TITLE: @"RunningLED", CLASS: @"RunningLED"},
+                                    @{TITLE: @"ZigZag", CLASS: @"ZigZag"},
+                                    @{TITLE: @"UISlider", CLASS: @"Slider"}
                           ]};
     NSDictionary* intermediate = @{SECTION: @"Intermediate", MENU: @[
                                     @{TITLE: @"Inter A", CLASS: @"InterB"},
@@ -32,7 +35,6 @@
     mainScreen.about = @"This is code from TechMaster.vn";
     //--------- End of customization -----------
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController: mainScreen];
-    
     window.rootViewController = nav;
 }
 @end

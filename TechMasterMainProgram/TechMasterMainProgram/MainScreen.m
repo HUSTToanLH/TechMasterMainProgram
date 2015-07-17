@@ -28,6 +28,10 @@
     [super viewDidLoad];
     UIBarButtonItem* barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"About" style:UIBarButtonItemStylePlain target:self action:@selector(onAbout)];
     self.navigationItem.rightBarButtonItem = barButtonItem;
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
+    
 }
 - (void)setAbout:(NSString *)about {
     _about = [NSString stringWithFormat:@"%@\n\n%@", about, @"Written by Techmaster Vietnam Ltd"];
@@ -101,6 +105,5 @@
     }
     
 }
-
 
 @end

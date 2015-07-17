@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A6D1B563F33005BDCC8 /* Slider.m */; };
+		03C08A701B563F33005BDCC8 /* Slider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C08A6E1B563F33005BDCC8 /* Slider.xib */; };
+		03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A781B5744D3005BDCC8 /* IWeather.m */; };
+		03C08A7B1B5744D3005BDCC8 /* IWeather.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C08A791B5744D3005BDCC8 /* IWeather.xib */; };
+		03C08A7F1B5762FA005BDCC8 /* IAmRich.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A7D1B5762FA005BDCC8 /* IAmRich.m */; };
+		03C08A801B5762FA005BDCC8 /* IAmRich.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C08A7E1B5762FA005BDCC8 /* IAmRich.xib */; };
+		03C08A841B576868005BDCC8 /* RunningLED.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A821B576868005BDCC8 /* RunningLED.m */; };
+		03C08A851B576868005BDCC8 /* RunningLED.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C08A831B576868005BDCC8 /* RunningLED.xib */; };
+		03C9EDDD1B576DC5007C0F9D /* darkBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C9EDDB1B576DC5007C0F9D /* darkBall.png */; };
+		03C9EDDE1B576DC5007C0F9D /* lightball.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C9EDDC1B576DC5007C0F9D /* lightball.png */; };
+		03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C9EDE31B578456007C0F9D /* ZigZag.m */; };
+		03F36B911B5600B900E9C812 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F36B901B5600B900E9C812 /* chat.png */; };
 		03F6B5241B54A53F00E9B3FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5231B54A53F00E9B3FE /* main.m */; };
 		03F6B52F1B54A53F00E9B3FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B52E1B54A53F00E9B3FE /* Images.xcassets */; };
 		03F6B5321B54A53F00E9B3FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5301B54A53F00E9B3FE /* LaunchScreen.xib */; };
@@ -14,11 +26,33 @@
 		03F6B5511B54A61A00E9B3FE /* BootLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1B54A61A00E9B3FE /* BootLogic.m */; };
 		03F6B5521B54A61A00E9B3FE /* ConsoleScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1B54A61A00E9B3FE /* ConsoleScreen.m */; };
 		03F6B5531B54A61A00E9B3FE /* MainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1B54A61A00E9B3FE /* MainScreen.m */; };
-		03F6B55D1B54A9B600E9B3FE /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B55B1B54A9B600E9B3FE /* Slider.m */; };
-		03F6B55E1B54A9B600E9B3FE /* Slider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B55C1B54A9B600E9B3FE /* Slider.xib */; };
+		03F6B5671B54B7CC00E9B3FE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5601B54B7CC00E9B3FE /* background.png */; };
+		03F6B5681B54B7CC00E9B3FE /* MaxSpeaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5611B54B7CC00E9B3FE /* MaxSpeaker.png */; };
+		03F6B5691B54B7CC00E9B3FE /* maxtrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5621B54B7CC00E9B3FE /* maxtrack.png */; };
+		03F6B56A1B54B7CC00E9B3FE /* mintrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5631B54B7CC00E9B3FE /* mintrack.png */; };
+		03F6B56B1B54B7CC00E9B3FE /* MuteSpeaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5641B54B7CC00E9B3FE /* MuteSpeaker.png */; };
+		03F6B56C1B54B7CC00E9B3FE /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5651B54B7CC00E9B3FE /* thumb.png */; };
+		03F6B56D1B54B7CC00E9B3FE /* track.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5661B54B7CC00E9B3FE /* track.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03C08A6C1B563F33005BDCC8 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
+		03C08A6D1B563F33005BDCC8 /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
+		03C08A6E1B563F33005BDCC8 /* Slider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slider.xib; sourceTree = "<group>"; };
+		03C08A771B5744D3005BDCC8 /* IWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWeather.h; sourceTree = "<group>"; };
+		03C08A781B5744D3005BDCC8 /* IWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWeather.m; sourceTree = "<group>"; };
+		03C08A791B5744D3005BDCC8 /* IWeather.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWeather.xib; sourceTree = "<group>"; };
+		03C08A7C1B5762FA005BDCC8 /* IAmRich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAmRich.h; sourceTree = "<group>"; };
+		03C08A7D1B5762FA005BDCC8 /* IAmRich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAmRich.m; sourceTree = "<group>"; };
+		03C08A7E1B5762FA005BDCC8 /* IAmRich.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAmRich.xib; sourceTree = "<group>"; };
+		03C08A811B576868005BDCC8 /* RunningLED.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningLED.h; sourceTree = "<group>"; };
+		03C08A821B576868005BDCC8 /* RunningLED.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningLED.m; sourceTree = "<group>"; };
+		03C08A831B576868005BDCC8 /* RunningLED.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunningLED.xib; sourceTree = "<group>"; };
+		03C9EDDB1B576DC5007C0F9D /* darkBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBall.png; sourceTree = "<group>"; };
+		03C9EDDC1B576DC5007C0F9D /* lightball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightball.png; sourceTree = "<group>"; };
+		03C9EDE21B578456007C0F9D /* ZigZag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZigZag.h; sourceTree = "<group>"; };
+		03C9EDE31B578456007C0F9D /* ZigZag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZigZag.m; sourceTree = "<group>"; };
+		03F36B901B5600B900E9C812 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		03F6B51E1B54A53F00E9B3FE /* TechMasterMainProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMasterMainProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F6B5221B54A53F00E9B3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F6B5231B54A53F00E9B3FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,9 +66,13 @@
 		03F6B54D1B54A61A00E9B3FE /* ConsoleScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleScreen.m; sourceTree = "<group>"; };
 		03F6B54E1B54A61A00E9B3FE /* MainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreen.h; sourceTree = "<group>"; };
 		03F6B54F1B54A61A00E9B3FE /* MainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreen.m; sourceTree = "<group>"; };
-		03F6B55A1B54A9B600E9B3FE /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
-		03F6B55B1B54A9B600E9B3FE /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
-		03F6B55C1B54A9B600E9B3FE /* Slider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slider.xib; sourceTree = "<group>"; };
+		03F6B5601B54B7CC00E9B3FE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		03F6B5611B54B7CC00E9B3FE /* MaxSpeaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MaxSpeaker.png; sourceTree = "<group>"; };
+		03F6B5621B54B7CC00E9B3FE /* maxtrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maxtrack.png; sourceTree = "<group>"; };
+		03F6B5631B54B7CC00E9B3FE /* mintrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mintrack.png; sourceTree = "<group>"; };
+		03F6B5641B54B7CC00E9B3FE /* MuteSpeaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MuteSpeaker.png; sourceTree = "<group>"; };
+		03F6B5651B54B7CC00E9B3FE /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
+		03F6B5661B54B7CC00E9B3FE /* track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C9EDD61B576BE1007C0F9D /* RunningLEDImage */ = {
+			isa = PBXGroup;
+			children = (
+				03C9EDDB1B576DC5007C0F9D /* darkBall.png */,
+				03C9EDDC1B576DC5007C0F9D /* lightball.png */,
+			);
+			name = RunningLEDImage;
+			sourceTree = "<group>";
+		};
 		03F6B5151B54A53F00E9B3FE = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +114,7 @@
 		03F6B5201B54A53F00E9B3FE /* TechMasterMainProgram */ = {
 			isa = PBXGroup;
 			children = (
-				03F6B5541B54A70F00E9B3FE /* Slider */,
+				03F6B5541B54A70F00E9B3FE /* Basic */,
 				03F6B5471B54A5F500E9B3FE /* Core */,
 				03F6B52E1B54A53F00E9B3FE /* Images.xcassets */,
 				03F6B5301B54A53F00E9B3FE /* LaunchScreen.xib */,
@@ -100,14 +147,42 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		03F6B5541B54A70F00E9B3FE /* Slider */ = {
+		03F6B5541B54A70F00E9B3FE /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				03F6B55A1B54A9B600E9B3FE /* Slider.h */,
-				03F6B55B1B54A9B600E9B3FE /* Slider.m */,
-				03F6B55C1B54A9B600E9B3FE /* Slider.xib */,
+				03C9EDD61B576BE1007C0F9D /* RunningLEDImage */,
+				03F6B55F1B54B7AB00E9B3FE /* SliderImage */,
+				03C08A6C1B563F33005BDCC8 /* Slider.h */,
+				03C08A6D1B563F33005BDCC8 /* Slider.m */,
+				03C9EDE21B578456007C0F9D /* ZigZag.h */,
+				03C9EDE31B578456007C0F9D /* ZigZag.m */,
+				03C08A6E1B563F33005BDCC8 /* Slider.xib */,
+				03C08A771B5744D3005BDCC8 /* IWeather.h */,
+				03C08A781B5744D3005BDCC8 /* IWeather.m */,
+				03C08A791B5744D3005BDCC8 /* IWeather.xib */,
+				03C08A7C1B5762FA005BDCC8 /* IAmRich.h */,
+				03C08A7D1B5762FA005BDCC8 /* IAmRich.m */,
+				03C08A7E1B5762FA005BDCC8 /* IAmRich.xib */,
+				03C08A811B576868005BDCC8 /* RunningLED.h */,
+				03C08A821B576868005BDCC8 /* RunningLED.m */,
+				03C08A831B576868005BDCC8 /* RunningLED.xib */,
 			);
-			name = Slider;
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		03F6B55F1B54B7AB00E9B3FE /* SliderImage */ = {
+			isa = PBXGroup;
+			children = (
+				03F6B5601B54B7CC00E9B3FE /* background.png */,
+				03F36B901B5600B900E9C812 /* chat.png */,
+				03F6B5611B54B7CC00E9B3FE /* MaxSpeaker.png */,
+				03F6B5621B54B7CC00E9B3FE /* maxtrack.png */,
+				03F6B5631B54B7CC00E9B3FE /* mintrack.png */,
+				03F6B5641B54B7CC00E9B3FE /* MuteSpeaker.png */,
+				03F6B5651B54B7CC00E9B3FE /* thumb.png */,
+				03F6B5661B54B7CC00E9B3FE /* track.png */,
+			);
+			name = SliderImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +242,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F6B56B1B54B7CC00E9B3FE /* MuteSpeaker.png in Resources */,
+				03F6B5691B54B7CC00E9B3FE /* maxtrack.png in Resources */,
+				03C08A7B1B5744D3005BDCC8 /* IWeather.xib in Resources */,
+				03C9EDDE1B576DC5007C0F9D /* lightball.png in Resources */,
 				03F6B5321B54A53F00E9B3FE /* LaunchScreen.xib in Resources */,
+				03F36B911B5600B900E9C812 /* chat.png in Resources */,
+				03F6B56A1B54B7CC00E9B3FE /* mintrack.png in Resources */,
+				03C08A801B5762FA005BDCC8 /* IAmRich.xib in Resources */,
+				03F6B5681B54B7CC00E9B3FE /* MaxSpeaker.png in Resources */,
+				03F6B5671B54B7CC00E9B3FE /* background.png in Resources */,
 				03F6B52F1B54A53F00E9B3FE /* Images.xcassets in Resources */,
-				03F6B55E1B54A9B600E9B3FE /* Slider.xib in Resources */,
+				03C9EDDD1B576DC5007C0F9D /* darkBall.png in Resources */,
+				03F6B56D1B54B7CC00E9B3FE /* track.png in Resources */,
+				03C08A851B576868005BDCC8 /* RunningLED.xib in Resources */,
+				03C08A701B563F33005BDCC8 /* Slider.xib in Resources */,
+				03F6B56C1B54B7CC00E9B3FE /* thumb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,11 +269,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F6B5511B54A61A00E9B3FE /* BootLogic.m in Sources */,
+				03C08A7F1B5762FA005BDCC8 /* IAmRich.m in Sources */,
 				03F6B5531B54A61A00E9B3FE /* MainScreen.m in Sources */,
+				03C08A841B576868005BDCC8 /* RunningLED.m in Sources */,
 				03F6B5521B54A61A00E9B3FE /* ConsoleScreen.m in Sources */,
 				03F6B5501B54A61A00E9B3FE /* AppDelegate.m in Sources */,
-				03F6B55D1B54A9B600E9B3FE /* Slider.m in Sources */,
+				03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */,
+				03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */,
 				03F6B5241B54A53F00E9B3FE /* main.m in Sources */,
+				03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
