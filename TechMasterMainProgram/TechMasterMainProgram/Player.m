@@ -10,11 +10,12 @@
 
 @implementation Player
 
-- (instancetype)init:(NSString *)name withNumber:(NSString *)number atPosition:(NSString *)position
+- (instancetype)init:(NSString *)name withNumber:(int)number andCaptain:(int)captain atPosition:(NSString *)position
 {
     if(self = [super init]){
         self.pName = name;
         self.pNumber = number;
+        self.pCaptain = captain;
         self.pPosition = position;
     }
     return  self;
@@ -24,7 +25,7 @@
 {
     if([object isMemberOfClass:[Player class]]){
         Player* temp = (Player*) object;
-        if([self.pName isEqual:temp.pName] && [self.pNumber isEqual:temp.pNumber] && [self.pPosition isEqual:temp.pPosition]){
+        if([self.pName isEqual:temp.pName] && self.pNumber == temp.pNumber && self.pCaptain == temp.pCaptain && [self.pPosition isEqual:temp.pPosition]){
             return true;
         }
         else{

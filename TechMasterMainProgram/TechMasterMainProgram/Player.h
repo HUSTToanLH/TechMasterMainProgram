@@ -10,9 +10,9 @@
 
 @interface Player : NSObject
 @property(strong, nonatomic) NSString *pName;
-@property(strong, nonatomic) int pNumber;
-@property(strong, nonatomic) int pCaptain;
-@property(strong, nonatomic) NSString *pPosition;
+@property(nonatomic) int pNumber;
+@property(nonatomic) int pCaptain;
+@property(nonatomic) NSString *pPosition;
 
 - (instancetype) init: (NSString *)name withNumber: (int)number andCaptain:(int)captain atPosition: (NSString *)position;
 
