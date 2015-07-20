@@ -28,15 +28,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     _ballDiameter = [self getDiameterOfBall:@"lightBall"];
-    _margin = 2*_ballDiameter;
+    _margin = _ballDiameter;
     //    lastONLED = _numberOfBall;
     
     x_lastONLED = -1;
     y_lastONLED = -1;
     
     _numberOfBall = [self getMaxNumberOfBall];
-    [self drawBallAd: _numberOfBall];
     
+//    [self drawBall: _numberOfBall];
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLed) userInfo:nil repeats:true];
+    
+//    matrix
+        [self drawBallAd: _numberOfBall];
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAd) userInfo:nil repeats:true];
 }
 

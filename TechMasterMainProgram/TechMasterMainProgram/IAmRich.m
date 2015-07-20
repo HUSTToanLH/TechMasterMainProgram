@@ -29,7 +29,7 @@
         _ruby.alpha = 1;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:3 animations:^{
-            _text.center = CGPointMake(_ruby.center.x, _ruby.center.y+_ruby.bounds.size.height/2 +20);
+            _text.center = CGPointMake(_ruby.center.x, _ruby.center.y+_ruby.frame.size.height/2 +20);
             _text.alpha = 1;
 
         } completion:nil];

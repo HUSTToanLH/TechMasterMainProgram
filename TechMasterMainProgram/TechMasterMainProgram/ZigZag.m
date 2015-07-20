@@ -24,11 +24,13 @@
     int width = 21;
     int space = (height - 1)*2;
     
-    for(int i = 1; i < height+1; i++){
-        for(int s = height; s < width+1; s = s+space){
-            int count = s+1-height+space;
-            if(width+1-s<space)
+    for(int i = 1; i <= height; i++){
+        for(int s = height; s <= width; s = s+space){
+            
+            int count = s+space-height + 1;
+            if(width+1-s<space) 
                 count = width+1;
+            
             for(int j = s+1-height; j < count; j++){
                 if(j == s-i+1 || j == s+i-1)
                     [self write:@"+"];
