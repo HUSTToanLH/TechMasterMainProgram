@@ -11,18 +11,37 @@
 @implementation NSArray (Extend)
 
 - (instancetype) unDuplicated:(int) count{
-    NSMutableArray *temp = [[NSMutableArray new] initWithArray:self];
-    NSMutableArray *tempResult = [[NSMutableArray new] initWithArray:self];
     
-    for (int i = 0; i < self.count-1; i++) {
-        for (int j = i; j < self.count; i++) {
-            if ([temp[i] isEqual:temp[j]] && ![tempResult[j] isEqual:nil] && [tempResult[j] isEqual:temp[j]]) {
-                [tempResult removeObjectAtIndex:j];
-            }
-        }
+    NSEnumerator *enumerator = [self objectEnumerator];
+    NSMutableArray *tempResult = [NSMutableArray arrayWithCapacity:self.count];
+
+    for (id e in enumerator) {
+        [tempResult addObject:e];
     }
     
+    NSLog(@"temp: %d",(int)tempResult.count);
+    int i = 0;
+    while(i < tempResult.count){
+        NSLog(@"count: %d",(int)tempResult.count);
+        NSMutableArray *check = [NSMutableArray new];
+        for (int j = i; j < tempResult.count; j++) {
+            if([tempResult[i] isEqual:tempResult[j]]){
+                NSNumber *number = [NSNumber numberWithInt:j];
+                [check addObject:number];
+            }
+        }
+        
+        for (int k = (int)check.count-1; k>0; k--) {
+            [tempResult removeObjectAtIndex:[check[k] integerValue]];
+        }
+        
+        i++;
+    }
+    
+    NSLog(@"temp: %d",(int)tempResult.count);
+
     [self arrayByAddingObjectsFromArray:tempResult];
+    NSLog(@"self: %d", (int)self.count);
     return self;
 }
 

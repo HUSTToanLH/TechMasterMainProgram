@@ -14,6 +14,6 @@
 @property(nonatomic) int pCaptain;
 @property(nonatomic) NSString *pPosition;
 
-- (instancetype) init: (NSString *)name withNumber: (int)number andCaptain:(int)captain atPosition: (NSString *)position;
+- (instancetype) init: (NSString *)name withNumber: (int)number isCaptain:(int)captain atPosition: (NSString *)position;
 
 @end

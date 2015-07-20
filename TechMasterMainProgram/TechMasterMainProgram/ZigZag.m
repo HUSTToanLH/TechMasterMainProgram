@@ -36,23 +36,23 @@
                     [self write:@" "];
             }
         }
-        [self write:@"\n"];
+        [self writeln:@""];
     }
     
     
-    b[4][0] = 1;
-    
-    CGPoint p1 = [self geneLine:4 basePointY:0 direct:DIRECT_UP];
-    CGPoint p2 = [self geneLine:p1.x basePointY:p1.y direct:DIRECT_DOWN];
-    CGPoint p3 = [self geneLine:p2.x basePointY:p2.y direct:DIRECT_UP];
-    CGPoint p4 = [self geneLine:p3.x basePointY:p3.y direct:DIRECT_DOWN];
-    [self geneLine:p4.x basePointY:p4.y direct:DIRECT_UP];
-    
-    [self printArray];
+//    b[4][0] = 1;
+//    
+//    CGPoint p1 = [self geneLine:4 basePointY:0 direct:DIRECT_UP];
+//    CGPoint p2 = [self geneLine:p1.x basePointY:p1.y direct:DIRECT_DOWN];
+//    CGPoint p3 = [self geneLine:p2.x basePointY:p2.y direct:DIRECT_UP];
+//    CGPoint p4 = [self geneLine:p3.x basePointY:p3.y direct:DIRECT_DOWN];
+//    [self geneLine:p4.x basePointY:p4.y direct:DIRECT_UP];
+//    
+//    [self printArray];
 }
 
-static int DIRECT_UP = -1;
-static int DIRECT_DOWN = 1;
+//static int DIRECT_UP = -1;
+//static int DIRECT_DOWN = 1;
 
 
 // ve 1 duong gom 4 diem
