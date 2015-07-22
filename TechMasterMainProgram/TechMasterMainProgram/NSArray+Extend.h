@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (Extend)
-- (instancetype) unDuplicated:(int) count;
+- (NSArray*) unDuplicated:(int) count;
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSArray (Extend)
 
-- (instancetype) unDuplicated:(int) count{
+- (NSArray*) unDuplicated:(int) count{
     
     NSEnumerator *enumerator = [self objectEnumerator];
     NSMutableArray *tempResult = [NSMutableArray arrayWithCapacity:self.count];
@@ -39,10 +39,10 @@
     }
     
     NSLog(@"temp: %d",(int)tempResult.count);
+    
+    NSArray *result = [[NSArray new] arrayByAddingObjectsFromArray:tempResult];
 
-    [self arrayByAddingObjectsFromArray:tempResult];
-    NSLog(@"self: %d", (int)self.count);
-    return self;
+    return result;
 }
 
 @end

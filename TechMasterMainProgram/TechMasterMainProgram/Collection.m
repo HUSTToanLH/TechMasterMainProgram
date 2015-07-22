@@ -53,6 +53,7 @@
     [self setListOfPosition];
     
     _teamStart = [NSMutableArray new];
+    
     //choose GK
     [self getPlayerForLine:_gK withNumber:1];
     
@@ -68,6 +69,10 @@
     //show team
     [self showListTeamStart];
     NSLog(@"");
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    _Barcelona = nil;
 }
 
 - (void)setListOfPosition{
@@ -96,7 +101,7 @@
         for(int i = 0; i < number; i++){
             id object = list[arc4random_uniform((int)list.count)];
             while ([_teamStart containsObject:object]) {
-                object = _fW[arc4random_uniform((int)list.count)];
+                object = list[arc4random_uniform((int)list.count)];
             }
             [_teamStart addObject:object];
         }

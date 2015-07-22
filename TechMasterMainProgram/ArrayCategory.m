@@ -35,25 +35,15 @@
     Player* suarez = [[Player new] init:@"Suarez" withNumber:9 isCaptain:0 atPosition:@"FW"];
     Player* messi = [[Player new] init:@"Messi" withNumber:10 isCaptain:2 atPosition:@"FW"];
     Player* neymar = [[Player new] init:@"Neymar" withNumber:11 isCaptain:0 atPosition:@"FW"];
-    Player* rafinha = [[Player new] init:@"Rafinha" withNumber:12 isCaptain:0 atPosition:@"MF"];
-    Player* bravo = [[Player new] init:@"Bravo" withNumber:13 isCaptain:0 atPosition:@"GK"];
-    Player* mascherano = [[Player new] init:@"Mascherano" withNumber:14 isCaptain:0 atPosition:@"MF"];
-    Player* bartra = [[Player new] init:@"Bartra" withNumber:15 isCaptain:0 atPosition:@"DF"];
-    Player* douglas = [[Player new] init:@"Douglas" withNumber:16 isCaptain:0 atPosition:@"DF"];
-    Player* alba = [[Player new] init:@"Alba" withNumber:18 isCaptain:0 atPosition:@"DF"];
-    Player* roberto = [[Player new] init:@"Roberto" withNumber:20 isCaptain:0 atPosition:@"MF"];
-    Player* adriano = [[Player new] init:@"Adriano" withNumber:21 isCaptain:0 atPosition:@"DF"];
-    Player* alves = [[Player new] init:@"Alves" withNumber:22 isCaptain:0 atPosition:@"DF"];
-    Player* vermaelen = [[Player new] init:@"Vermaelen" withNumber:23 isCaptain:0 atPosition:@"DF"];
-    Player* mathieu = [[Player new] init:@"Mathieu" withNumber:24 isCaptain:0 atPosition:@"DF"];
-    Player* masip = [[Player new] init:@"Masip" withNumber:25 isCaptain:0 atPosition:@"GK"];
-    Player* song = [[Player new] init:@"Song" withNumber:0 isCaptain:0 atPosition:@"MF"];
-    Player* turan = [[Player new] init:@"Turan" withNumber:0 isCaptain:0 atPosition:@"MF"];
-    Player* vidal = [[Player new] init:@"Vidal" withNumber:0 isCaptain:0 atPosition:@"MF"];
     
-    _Barcelona = @[stegen, pique, rakitic, busquets, rodrigues,stegen2, pique2, rakitic2, busquets2, rodrigues2, iniesta, suarez, messi, neymar, rafinha, bravo, mascherano, bartra, douglas, alba, roberto, adriano, alves, vermaelen, mathieu, masip, song, turan, vidal];
-    [_Barcelona unDuplicated:10];
+    _Barcelona = @[stegen, stegen2, pique, rakitic, rakitic2, busquets, rodrigues, pique2, busquets2, rodrigues2, iniesta, suarez, messi, neymar];
+    
+    [self writeln:@"Input Array"];
+    [self showListTeamStart:_Barcelona];
+    _Barcelona = [_Barcelona unDuplicated:10];
     NSLog(@"count: %d",(int)_Barcelona.count);
+    
+    [self writeln:@"Output Array"];
     [self showListTeamStart:_Barcelona];
 }
 
