@@ -39,7 +39,7 @@
                           ]};
     NSDictionary* cartoon = @{SECTION: @"Cartoon", MENU: @[
                                     @{TITLE: @"CampFire", CLASS: @"CampFire"},
-                                    @{TITLE: @"Inter B", CLASS: @"InterB"}
+                                    @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"}
                                   ]};
     NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
                                     @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}
