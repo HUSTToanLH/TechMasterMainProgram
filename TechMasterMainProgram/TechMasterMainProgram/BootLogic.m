@@ -37,15 +37,15 @@
                                     @{TITLE: @"ZigZag", CLASS: @"ZigZag"},
                                     @{TITLE: @"UISlider", CLASS: @"Slider"}
                           ]};
-    NSDictionary* intermediate = @{SECTION: @"Intermediate", MENU: @[
-                                    @{TITLE: @"Inter A", CLASS: @"InterB"},
+    NSDictionary* cartoon = @{SECTION: @"Cartoon", MENU: @[
+                                    @{TITLE: @"CampFire", CLASS: @"CampFire"},
                                     @{TITLE: @"Inter B", CLASS: @"InterB"}
                                   ]};
     NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
                                     @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}
                              ]};
     
-    mainScreen.menu = @[demoSwift, example, array, basic, intermediate, advanced];
+    mainScreen.menu = @[demoSwift, example, array, basic, cartoon, advanced];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from TechMaster.vn";
     //--------- End of customization -----------

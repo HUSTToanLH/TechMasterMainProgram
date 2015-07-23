@@ -40,6 +40,24 @@
 		03B363DF1B607CAA001C7264 /* ChessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B363DE1B607CAA001C7264 /* ChessView.m */; };
 		03B363E31B60892E001C7264 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B363E11B60892E001C7264 /* BasicView.m */; };
 		03B363E41B60892E001C7264 /* BasicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B363E21B60892E001C7264 /* BasicView.xib */; };
+		03B363E81B609A59001C7264 /* CampFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B363E71B609A59001C7264 /* CampFire.m */; };
+		03B363FB1B609BA2001C7264 /* campFire01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363EA1B609BA2001C7264 /* campFire01.gif */; };
+		03B363FC1B609BA2001C7264 /* campFire02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363EB1B609BA2001C7264 /* campFire02.gif */; };
+		03B363FD1B609BA2001C7264 /* campFire03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363EC1B609BA2001C7264 /* campFire03.gif */; };
+		03B363FE1B609BA2001C7264 /* campFire04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363ED1B609BA2001C7264 /* campFire04.gif */; };
+		03B363FF1B609BA2001C7264 /* campFire05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363EE1B609BA2001C7264 /* campFire05.gif */; };
+		03B364001B609BA2001C7264 /* campFire06.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363EF1B609BA2001C7264 /* campFire06.gif */; };
+		03B364011B609BA2001C7264 /* campFire07.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F01B609BA2001C7264 /* campFire07.gif */; };
+		03B364021B609BA2001C7264 /* campFire08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F11B609BA2001C7264 /* campFire08.gif */; };
+		03B364031B609BA2001C7264 /* campFire09.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F21B609BA2001C7264 /* campFire09.gif */; };
+		03B364041B609BA2001C7264 /* campFire10.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F31B609BA2001C7264 /* campFire10.gif */; };
+		03B364051B609BA2001C7264 /* campFire11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F41B609BA2001C7264 /* campFire11.gif */; };
+		03B364061B609BA2001C7264 /* campFire12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F51B609BA2001C7264 /* campFire12.gif */; };
+		03B364071B609BA2001C7264 /* campFire13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F61B609BA2001C7264 /* campFire13.gif */; };
+		03B364081B609BA2001C7264 /* campFire14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F71B609BA2001C7264 /* campFire14.gif */; };
+		03B364091B609BA2001C7264 /* campFire15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F81B609BA2001C7264 /* campFire15.gif */; };
+		03B3640A1B609BA2001C7264 /* campFire16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363F91B609BA2001C7264 /* campFire16.gif */; };
+		03B3640B1B609BA2001C7264 /* campFire17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03B363FA1B609BA2001C7264 /* campFire17.gif */; };
 		03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A6D1B563F33005BDCC8 /* Slider.m */; };
 		03C08A701B563F33005BDCC8 /* Slider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C08A6E1B563F33005BDCC8 /* Slider.xib */; };
 		03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A781B5744D3005BDCC8 /* IWeather.m */; };
@@ -113,6 +131,25 @@
 		03B363E01B60892E001C7264 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
 		03B363E11B60892E001C7264 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
 		03B363E21B60892E001C7264 /* BasicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicView.xib; sourceTree = "<group>"; };
+		03B363E61B609A59001C7264 /* CampFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampFire.h; sourceTree = "<group>"; };
+		03B363E71B609A59001C7264 /* CampFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampFire.m; sourceTree = "<group>"; };
+		03B363EA1B609BA2001C7264 /* campFire01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire01.gif; sourceTree = "<group>"; };
+		03B363EB1B609BA2001C7264 /* campFire02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire02.gif; sourceTree = "<group>"; };
+		03B363EC1B609BA2001C7264 /* campFire03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire03.gif; sourceTree = "<group>"; };
+		03B363ED1B609BA2001C7264 /* campFire04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire04.gif; sourceTree = "<group>"; };
+		03B363EE1B609BA2001C7264 /* campFire05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire05.gif; sourceTree = "<group>"; };
+		03B363EF1B609BA2001C7264 /* campFire06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire06.gif; sourceTree = "<group>"; };
+		03B363F01B609BA2001C7264 /* campFire07.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire07.gif; sourceTree = "<group>"; };
+		03B363F11B609BA2001C7264 /* campFire08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire08.gif; sourceTree = "<group>"; };
+		03B363F21B609BA2001C7264 /* campFire09.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire09.gif; sourceTree = "<group>"; };
+		03B363F31B609BA2001C7264 /* campFire10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire10.gif; sourceTree = "<group>"; };
+		03B363F41B609BA2001C7264 /* campFire11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire11.gif; sourceTree = "<group>"; };
+		03B363F51B609BA2001C7264 /* campFire12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire12.gif; sourceTree = "<group>"; };
+		03B363F61B609BA2001C7264 /* campFire13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire13.gif; sourceTree = "<group>"; };
+		03B363F71B609BA2001C7264 /* campFire14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire14.gif; sourceTree = "<group>"; };
+		03B363F81B609BA2001C7264 /* campFire15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire15.gif; sourceTree = "<group>"; };
+		03B363F91B609BA2001C7264 /* campFire16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire16.gif; sourceTree = "<group>"; };
+		03B363FA1B609BA2001C7264 /* campFire17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = campFire17.gif; sourceTree = "<group>"; };
 		03C08A6C1B563F33005BDCC8 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
 		03C08A6D1B563F33005BDCC8 /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
 		03C08A6E1B563F33005BDCC8 /* Slider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slider.xib; sourceTree = "<group>"; };
@@ -233,6 +270,40 @@
 			name = DemoSwift;
 			sourceTree = "<group>";
 		};
+		03B363E51B609A29001C7264 /* Cartoon */ = {
+			isa = PBXGroup;
+			children = (
+				03B363E91B609B74001C7264 /* image */,
+				03B363E61B609A59001C7264 /* CampFire.h */,
+				03B363E71B609A59001C7264 /* CampFire.m */,
+			);
+			name = Cartoon;
+			sourceTree = "<group>";
+		};
+		03B363E91B609B74001C7264 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				03B363EA1B609BA2001C7264 /* campFire01.gif */,
+				03B363EB1B609BA2001C7264 /* campFire02.gif */,
+				03B363EC1B609BA2001C7264 /* campFire03.gif */,
+				03B363ED1B609BA2001C7264 /* campFire04.gif */,
+				03B363EE1B609BA2001C7264 /* campFire05.gif */,
+				03B363EF1B609BA2001C7264 /* campFire06.gif */,
+				03B363F01B609BA2001C7264 /* campFire07.gif */,
+				03B363F11B609BA2001C7264 /* campFire08.gif */,
+				03B363F21B609BA2001C7264 /* campFire09.gif */,
+				03B363F31B609BA2001C7264 /* campFire10.gif */,
+				03B363F41B609BA2001C7264 /* campFire11.gif */,
+				03B363F51B609BA2001C7264 /* campFire12.gif */,
+				03B363F61B609BA2001C7264 /* campFire13.gif */,
+				03B363F71B609BA2001C7264 /* campFire14.gif */,
+				03B363F81B609BA2001C7264 /* campFire15.gif */,
+				03B363F91B609BA2001C7264 /* campFire16.gif */,
+				03B363FA1B609BA2001C7264 /* campFire17.gif */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		03C9EDD61B576BE1007C0F9D /* RunningLEDImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +347,7 @@
 		03F6B5201B54A53F00E9B3FE /* TechMasterMainProgram */ = {
 			isa = PBXGroup;
 			children = (
+				03B363E51B609A29001C7264 /* Cartoon */,
 				03F6B5471B54A5F500E9B3FE /* Core */,
 				03B363DC1B607B9B001C7264 /* DemoSwift */,
 				036D98431B5CB42A00E05377 /* Example */,
@@ -412,28 +484,41 @@
 				03F6B5691B54B7CC00E9B3FE /* maxtrack.png in Resources */,
 				03B363D71B5F9D6F001C7264 /* square.jpg in Resources */,
 				03C08A7B1B5744D3005BDCC8 /* IWeather.xib in Resources */,
+				03B364021B609BA2001C7264 /* campFire08.gif in Resources */,
+				03B3640B1B609BA2001C7264 /* campFire17.gif in Resources */,
+				03B364081B609BA2001C7264 /* campFire14.gif in Resources */,
+				03B363FF1B609BA2001C7264 /* campFire05.gif in Resources */,
 				03107ADA1B5F33CB00D058B5 /* background1.jpg in Resources */,
 				03B363C21B5F7D48001C7264 /* OffBlackLeft.png in Resources */,
 				03C9EDDE1B576DC5007C0F9D /* lightball.png in Resources */,
+				03B364061B609BA2001C7264 /* campFire12.gif in Resources */,
 				03B363C51B5F7D48001C7264 /* OnBlackLeft.png in Resources */,
 				03F6B5321B54A53F00E9B3FE /* LaunchScreen.xib in Resources */,
 				036D98551B5E4F9300E05377 /* SliderBasic.xib in Resources */,
 				03F36B911B5600B900E9C812 /* chat.png in Resources */,
 				03F6B56A1B54B7CC00E9B3FE /* mintrack.png in Resources */,
 				03C08A801B5762FA005BDCC8 /* IAmRich.xib in Resources */,
+				03B3640A1B609BA2001C7264 /* campFire16.gif in Resources */,
 				03F6B5681B54B7CC00E9B3FE /* MaxSpeaker.png in Resources */,
 				03107ADE1B5F344500D058B5 /* thumb1.png in Resources */,
 				03B363CF1B5F8CA1001C7264 /* footBall.jpeg in Resources */,
+				03B363FB1B609BA2001C7264 /* campFire01.gif in Resources */,
 				03107AE11B5F42B100D058B5 /* maxTrack1.png in Resources */,
 				03B363C41B5F7D48001C7264 /* OffWhiteLeft.png in Resources */,
+				03B364011B609BA2001C7264 /* campFire07.gif in Resources */,
+				03B363FD1B609BA2001C7264 /* campFire03.gif in Resources */,
 				03B363C71B5F7D48001C7264 /* OnWhiteRight.png in Resources */,
 				03107AED1B5F6F2E00D058B5 /* Switch.xib in Resources */,
+				03B364091B609BA2001C7264 /* campFire15.gif in Resources */,
 				036D984B1B5CCF8D00E05377 /* DemoSelector.xib in Resources */,
 				03B363C11B5F7D48001C7264 /* OffBlackRight.png in Resources */,
 				03107AE81B5F55D300D058B5 /* minTrack2.png in Resources */,
+				03B364031B609BA2001C7264 /* campFire09.gif in Resources */,
 				03F6B5671B54B7CC00E9B3FE /* background.png in Resources */,
 				03B363C31B5F7D48001C7264 /* OffWhiteRight.png in Resources */,
 				03F6B52F1B54A53F00E9B3FE /* Images.xcassets in Resources */,
+				03B363FE1B609BA2001C7264 /* campFire04.gif in Resources */,
+				03B364041B609BA2001C7264 /* campFire10.gif in Resources */,
 				03B363CD1B5F8BA9001C7264 /* SkewImage.xib in Resources */,
 				03B363C61B5F7D48001C7264 /* OnBlackRight.png in Resources */,
 				036D98501B5E4C8700E05377 /* SliderAdvanced.xib in Resources */,
@@ -443,12 +528,16 @@
 				03B363E41B60892E001C7264 /* BasicView.xib in Resources */,
 				03C9EDDD1B576DC5007C0F9D /* darkBall.png in Resources */,
 				03F6B56D1B54B7CC00E9B3FE /* track.png in Resources */,
+				03B364071B609BA2001C7264 /* campFire13.gif in Resources */,
 				03C08A851B576868005BDCC8 /* RunningLED.xib in Resources */,
+				03B364051B609BA2001C7264 /* campFire11.gif in Resources */,
 				03C08A701B563F33005BDCC8 /* Slider.xib in Resources */,
 				03107AE51B5F46C800D058B5 /* maxTrack2.png in Resources */,
 				03107AE21B5F42B100D058B5 /* minTrack1.png in Resources */,
 				03B363D51B5F967A001C7264 /* heart.jpg in Resources */,
 				03F6B56C1B54B7CC00E9B3FE /* thumb.png in Resources */,
+				03B363FC1B609BA2001C7264 /* campFire02.gif in Resources */,
+				03B364001B609BA2001C7264 /* campFire06.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +562,7 @@
 				03B363E31B60892E001C7264 /* BasicView.m in Sources */,
 				03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */,
 				03C9EDFD1B59E655007C0F9D /* NSArray+Extend.m in Sources */,
+				03B363E81B609A59001C7264 /* CampFire.m in Sources */,
 				036D98541B5E4F9300E05377 /* SliderBasic.m in Sources */,
 				03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */,
 				03B363DF1B607CAA001C7264 /* ChessView.m in Sources */,

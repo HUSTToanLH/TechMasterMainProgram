@@ -22,10 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self onShow:_mySwitch];
-    [self onChangeAlpha:_sliderAlpha];
-    [self rotateAndScale];
-    [self onClickSegment:_mySegment];
 }
 
 - (IBAction)onShow:(id)sender {

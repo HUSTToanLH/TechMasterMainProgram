@@ -21,7 +21,7 @@
                     <rect key="frame" x="59" y="53" width="257" height="421"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqA-KB-W1b">
-                    <rect key="frame" x="128" y="553" width="118" height="30"/>
+                    <rect key="frame" x="131" y="588" width="118" height="30"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Auto">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,7 +32,7 @@
                     </connections>
                 </button>
                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-90" maxValue="90" translatesAutoresizingMaskIntoConstraints="NO" id="Vo0-T1-vja">
-                    <rect key="frame" x="60" y="591" width="255" height="31"/>
+                    <rect key="frame" x="6" y="543" width="363" height="31"/>
                     <connections>
                         <action selector="onChangeValueSlider:" destination="-1" eventType="valueChanged" id="V8K-ls-rb7"/>
                     </connections>
