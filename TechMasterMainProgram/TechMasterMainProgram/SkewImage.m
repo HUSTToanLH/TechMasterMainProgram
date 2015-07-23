@@ -26,7 +26,7 @@
     i = 0;
     _isAuto = false;
 //    [_imageSkew setImage:[UIImage imageNamed:@"heart.jpg"]];
-    [_imageSkew setImage:[UIImage imageNamed:@"footBall.jpeg"]];
+    [_imageSkew setImage:[UIImage imageNamed:@"ngoctrinh.jpg"]];
 }
 
 - (IBAction)onChangeValueSlider:(id)sender {

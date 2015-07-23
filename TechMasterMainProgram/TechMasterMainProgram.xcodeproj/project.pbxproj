@@ -37,6 +37,9 @@
 		03B363D51B5F967A001C7264 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B363D41B5F967A001C7264 /* heart.jpg */; };
 		03B363D71B5F9D6F001C7264 /* square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B363D61B5F9D6F001C7264 /* square.jpg */; };
 		03B363DB1B5FB218001C7264 /* ngoctrinh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03B363DA1B5FB218001C7264 /* ngoctrinh.jpg */; };
+		03B363DF1B607CAA001C7264 /* ChessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B363DE1B607CAA001C7264 /* ChessView.m */; };
+		03B363E31B60892E001C7264 /* BasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B363E11B60892E001C7264 /* BasicView.m */; };
+		03B363E41B60892E001C7264 /* BasicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B363E21B60892E001C7264 /* BasicView.xib */; };
 		03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A6D1B563F33005BDCC8 /* Slider.m */; };
 		03C08A701B563F33005BDCC8 /* Slider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C08A6E1B563F33005BDCC8 /* Slider.xib */; };
 		03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C08A781B5744D3005BDCC8 /* IWeather.m */; };
@@ -105,6 +108,11 @@
 		03B363D41B5F967A001C7264 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpg; path = ../../../../../Downloads/onoff/heart.jpg; sourceTree = "<group>"; };
 		03B363D61B5F9D6F001C7264 /* square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = square.jpg; path = ../../../../../Downloads/onoff/square.jpg; sourceTree = "<group>"; };
 		03B363DA1B5FB218001C7264 /* ngoctrinh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ngoctrinh.jpg; sourceTree = "<group>"; };
+		03B363DD1B607CAA001C7264 /* ChessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessView.h; sourceTree = "<group>"; };
+		03B363DE1B607CAA001C7264 /* ChessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessView.m; sourceTree = "<group>"; };
+		03B363E01B60892E001C7264 /* BasicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicView.h; sourceTree = "<group>"; };
+		03B363E11B60892E001C7264 /* BasicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicView.m; sourceTree = "<group>"; };
+		03B363E21B60892E001C7264 /* BasicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicView.xib; sourceTree = "<group>"; };
 		03C08A6C1B563F33005BDCC8 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
 		03C08A6D1B563F33005BDCC8 /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
 		03C08A6E1B563F33005BDCC8 /* Slider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slider.xib; sourceTree = "<group>"; };
@@ -213,6 +221,18 @@
 			name = Example;
 			sourceTree = "<group>";
 		};
+		03B363DC1B607B9B001C7264 /* DemoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				03B363DD1B607CAA001C7264 /* ChessView.h */,
+				03B363DE1B607CAA001C7264 /* ChessView.m */,
+				03B363E01B60892E001C7264 /* BasicView.h */,
+				03B363E11B60892E001C7264 /* BasicView.m */,
+				03B363E21B60892E001C7264 /* BasicView.xib */,
+			);
+			name = DemoSwift;
+			sourceTree = "<group>";
+		};
 		03C9EDD61B576BE1007C0F9D /* RunningLEDImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				03F6B5471B54A5F500E9B3FE /* Core */,
+				03B363DC1B607B9B001C7264 /* DemoSwift */,
 				036D98431B5CB42A00E05377 /* Example */,
 				03C9EDE51B5895BF007C0F9D /* Array */,
 				03F6B5541B54A70F00E9B3FE /* Basic */,
@@ -419,6 +440,7 @@
 				03B363C01B5F7D48001C7264 /* lighton.jpg in Resources */,
 				03B363C81B5F7D48001C7264 /* OnWhiteLeft.png in Resources */,
 				03B363BF1B5F7D48001C7264 /* lightoff.jpg in Resources */,
+				03B363E41B60892E001C7264 /* BasicView.xib in Resources */,
 				03C9EDDD1B576DC5007C0F9D /* darkBall.png in Resources */,
 				03F6B56D1B54B7CC00E9B3FE /* track.png in Resources */,
 				03C08A851B576868005BDCC8 /* RunningLED.xib in Resources */,
@@ -448,10 +470,12 @@
 				03F6B5521B54A61A00E9B3FE /* ConsoleScreen.m in Sources */,
 				03F6B5501B54A61A00E9B3FE /* AppDelegate.m in Sources */,
 				03107AEC1B5F6F2E00D058B5 /* Switch.m in Sources */,
+				03B363E31B60892E001C7264 /* BasicView.m in Sources */,
 				03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */,
 				03C9EDFD1B59E655007C0F9D /* NSArray+Extend.m in Sources */,
 				036D98541B5E4F9300E05377 /* SliderBasic.m in Sources */,
 				03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */,
+				03B363DF1B607CAA001C7264 /* ChessView.m in Sources */,
 				03F6B5241B54A53F00E9B3FE /* main.m in Sources */,
 				03C9EDF41B59E3F0007C0F9D /* ArrayCategory.m in Sources */,
 				03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */,
