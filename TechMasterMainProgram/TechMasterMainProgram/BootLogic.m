@@ -20,7 +20,7 @@
                                       @{TITLE: @"BasicView", CLASS: @"BasicView"}
                                       ]};
     NSDictionary* example = @{SECTION: @"Example", MENU:@[
-                                      @{TITLE: @"Selector", CLASS: @"DemoSelector"},
+                                      @{TITLE: @"DemoSelector", CLASS: @"DemoSelector"},
                                       @{TITLE: @"Switch", CLASS: @"Switch"},
                                       @{TITLE: @"SkewImage", CLASS: @"SkewImage"},
                                       @{TITLE: @"SliderAdvanced", CLASS: @"SliderAdvanced"}
@@ -39,7 +39,8 @@
                           ]};
     NSDictionary* cartoon = @{SECTION: @"Cartoon", MENU: @[
                                     @{TITLE: @"CampFire", CLASS: @"CampFire"},
-                                    @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"}
+                                    @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"},
+                                    @{TITLE: @"FlyingBird", CLASS: @"FlyingBird"}
                                   ]};
     NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
                                     @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}

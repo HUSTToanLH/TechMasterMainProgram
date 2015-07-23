@@ -37,4 +37,12 @@
     }
 }
 
+- (instancetype)init{
+    return self;
+}
+
+- (void)init:(NSString *)string{
+    
+}
+
 @end
