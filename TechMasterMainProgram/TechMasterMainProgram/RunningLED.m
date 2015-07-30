@@ -23,6 +23,9 @@
     int lastONLED;
     int x_lastONLED;
     int y_lastONLED;
+    BOOL _isTop, _isBottom, _isLeft, _isRight, _inside;
+    int topX, topY, length, ballStopX, ballStopY, _count;
+    NSMutableArray* array;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,14 +37,180 @@
     x_lastONLED = -1;
     y_lastONLED = -1;
     
+    _isTop = NO;
+    _isBottom = NO;
+    _isLeft = NO;
+    _isRight = YES;
+    
+    topX = 0;
+    topY = _numberOfBall-1;
+    length = 0;
+    
     _numberOfBall = [self getMaxNumberOfBall];
+    length = _numberOfBall - 1 ;
+    array = [[NSMutableArray alloc] initWithCapacity:_numberOfBall*_numberOfBall];
+    
+    
+    _inside = YES;
+    if (_numberOfBall%2!=0) {
+        ballStopX = _numberOfBall/2;
+        ballStopY = _numberOfBall/2;
+    }
+    else{
+        ballStopX = floor(_numberOfBall/2);
+        ballStopY = ballStopX-1;
+    }
     
 //    [self drawBall: _numberOfBall];
 //    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLed) userInfo:nil repeats:true];
     
 //    matrix
-        [self drawBallAd: _numberOfBall];
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAd) userInfo:nil repeats:true];
+    [self drawBallAd: _numberOfBall];
+    
+//    //Zigzag
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAd) userInfo:nil repeats:true];
+//    
+//    //Around
+//    [self setBallBeforeRunning];
+//    _count = 0;
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAround) userInfo:nil repeats:true];
+    
+    //Cross
+    [self setBallCrossBeforeRunning];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedCross) userInfo:nil repeats:true];
+}
+
+- (void)setBallCrossBeforeRunning
+{
+    
+}
+
+- (void) runningLedCross
+{
+    
+}
+
+- (void) runningLedAround
+{
+    if(x_lastONLED != -1 && y_lastONLED != -1){
+        [self turnOFFLedAd:x_lastONLED andY:y_lastONLED];
+    }
+    
+    int tag = (int)[[array objectAtIndex:_count] integerValue];
+    x_lastONLED = tag/100-1;
+    y_lastONLED = tag - (x_lastONLED+1)*100;
+    [self turnONLedAd:x_lastONLED andY:y_lastONLED];
+    
+    if (_inside) {
+        if (_count < _numberOfBall*_numberOfBall-1) {
+            _count++;
+        }
+        else{
+            _inside = NO;
+            _count--;
+        }
+    }
+    else{
+        if (_count > 0) {
+            _count--;
+        }
+        else{
+            _inside = YES;
+            _count++;
+        }
+    }
+//    NSLog(@"count: %d", _count);
+    
+    
+}
+
+- (void) setBallBeforeRunning
+{
+    while (_inside) {
+        if (x_lastONLED == -1 && y_lastONLED == -1) {
+            x_lastONLED = 0;
+            y_lastONLED = 0;
+        }
+        
+        else if (_isRight) {
+            if (x_lastONLED == -1) {
+                x_lastONLED = 0;
+            }
+            if (y_lastONLED == -1) {
+                y_lastONLED = 0;
+            }
+            if (y_lastONLED < length) {
+                y_lastONLED++;
+            }
+            else{
+                _isRight = NO;
+                _isBottom = YES;
+                x_lastONLED++;
+            }
+        }
+        
+        else if (_isBottom) {
+            if (x_lastONLED < length) {
+                x_lastONLED++;
+            }
+            else{
+                _isBottom = NO;
+                _isLeft = YES;
+                y_lastONLED--;
+            }
+        }
+        
+        else if (_isLeft) {
+            if (y_lastONLED > _numberOfBall-length-1) {
+                y_lastONLED--;
+            }
+            else{
+                x_lastONLED--;
+                length--;
+                _isLeft = NO;
+                _isTop = YES;
+            }
+        }
+        
+        else if (_isTop) {
+            if (x_lastONLED > _numberOfBall-length-1) {
+                x_lastONLED--;
+            }
+            else{
+                y_lastONLED++;
+                _isTop = NO;
+                _isRight = YES;
+            }
+        }
+        
+        NSNumber* obj = [NSNumber numberWithInt:(x_lastONLED+1)*100 +y_lastONLED];
+        [array addObject:obj];
+//        NSLog(@"obj: %@",obj);
+        
+        //check circle
+        if (x_lastONLED == ballStopX && y_lastONLED == ballStopY) {
+            _inside = NO;
+            if (_isTop) {
+                _isTop = NO;
+                _isBottom = YES;
+            }
+            else if (_isBottom){
+                _isBottom = NO;
+                _isTop = YES;
+            }
+            else if (_isLeft){
+                _isLeft = NO;
+                _isRight = YES;
+            }
+            else{
+                _isRight = NO;
+                _isLeft = YES;
+            }
+        }
+    }
+    
+    _inside = YES;
+
 }
 
 - (void) runningLedAd
@@ -70,6 +239,7 @@
     
     [self turnONLedAd:x_lastONLED andY:y_lastONLED];
 }
+
 
 - (void) runningLedContrary
 {

@@ -28,7 +28,8 @@
 
     NSDictionary* array = @{SECTION: @"Array", MENU:@[
                                     @{TITLE: @"Collection", CLASS: @"Collection"},
-                                    @{TITLE: @"ArrayCategory", CLASS: @"ArrayCategory"}
+                                    @{TITLE: @"ArrayCategory", CLASS: @"ArrayCategory"},
+                                    @{TITLE: @"CollectionAdvanced", CLASS: @"CollectionAdvanced"}
                                     ]};
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
                                     @{TITLE: @"IAmRich", CLASS: @"IAmRich"},
