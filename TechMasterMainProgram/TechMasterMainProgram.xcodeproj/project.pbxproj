@@ -17,7 +17,7 @@
 		03107AED1B5F6F2E00D058B5 /* Switch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03107AEB1B5F6F2E00D058B5 /* Switch.xib */; };
 		03484B1E1B69BC7A0073BD13 /* darkBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 03484B1A1B69BC7A0073BD13 /* darkBall.png */; };
 		03484B1F1B69BC7A0073BD13 /* darkBall2.png in Resources */ = {isa = PBXBuildFile; fileRef = 03484B1B1B69BC7A0073BD13 /* darkBall2.png */; };
-		03484B201B69BC7A0073BD13 /* lightBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 03484B1C1B69BC7A0073BD13 /* lightBall.png */; };
+		03484B201B69BC7A0073BD13 /* lightBall3.png in Resources */ = {isa = PBXBuildFile; fileRef = 03484B1C1B69BC7A0073BD13 /* lightBall3.png */; };
 		03484B211B69BC7A0073BD13 /* lightBall2.png in Resources */ = {isa = PBXBuildFile; fileRef = 03484B1D1B69BC7A0073BD13 /* lightBall2.png */; };
 		036D984A1B5CCF8D00E05377 /* DemoSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 036D98481B5CCF8D00E05377 /* DemoSelector.m */; };
 		036D984B1B5CCF8D00E05377 /* DemoSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036D98491B5CCF8D00E05377 /* DemoSelector.xib */; };
@@ -167,7 +167,7 @@
 		03107AEB1B5F6F2E00D058B5 /* Switch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Switch.xib; sourceTree = "<group>"; };
 		03484B1A1B69BC7A0073BD13 /* darkBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBall.png; sourceTree = "<group>"; };
 		03484B1B1B69BC7A0073BD13 /* darkBall2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBall2.png; sourceTree = "<group>"; };
-		03484B1C1B69BC7A0073BD13 /* lightBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBall.png; sourceTree = "<group>"; };
+		03484B1C1B69BC7A0073BD13 /* lightBall3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBall3.png; sourceTree = "<group>"; };
 		03484B1D1B69BC7A0073BD13 /* lightBall2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightBall2.png; sourceTree = "<group>"; };
 		036D98471B5CCF8D00E05377 /* DemoSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSelector.h; sourceTree = "<group>"; };
 		036D98481B5CCF8D00E05377 /* DemoSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSelector.m; sourceTree = "<group>"; };
@@ -520,7 +520,7 @@
 			children = (
 				03484B1A1B69BC7A0073BD13 /* darkBall.png */,
 				03484B1B1B69BC7A0073BD13 /* darkBall2.png */,
-				03484B1C1B69BC7A0073BD13 /* lightBall.png */,
+				03484B1C1B69BC7A0073BD13 /* lightBall3.png */,
 				03484B1D1B69BC7A0073BD13 /* lightBall2.png */,
 			);
 			name = RunningLEDImage;
@@ -755,7 +755,7 @@
 				03B364551B60F815001C7264 /* 77ef19d8e9.gif.002.gif in Resources */,
 				03B364091B609BA2001C7264 /* campFire15.gif in Resources */,
 				03B3647C1B60F815001C7264 /* 77ef19d8e9.gif.041.gif in Resources */,
-				03484B201B69BC7A0073BD13 /* lightBall.png in Resources */,
+				03484B201B69BC7A0073BD13 /* lightBall3.png in Resources */,
 				036D984B1B5CCF8D00E05377 /* DemoSelector.xib in Resources */,
 				03B363C11B5F7D48001C7264 /* OffBlackRight.png in Resources */,
 				03B364611B60F815001C7264 /* 77ef19d8e9.gif.014.gif in Resources */,

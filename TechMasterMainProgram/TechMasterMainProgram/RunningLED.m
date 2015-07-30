@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _ballDiameter = [self getDiameterOfBall:@"lightBall"];
+    _ballDiameter = [self getDiameterOfBall:@"lightBall3"];
     _margin = _ballDiameter;
     //    lastONLED = _numberOfBall;
     
