@@ -69,15 +69,15 @@
     
 //    //Zigzag
 //    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAd) userInfo:nil repeats:true];
-//    
-//    //Around
-//    [self setBallBeforeRunning];
-//    _count = 0;
-//    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAround) userInfo:nil repeats:true];
     
-    //Cross
-    [self setBallCrossBeforeRunning];
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedCross) userInfo:nil repeats:true];
+    //Around
+    [self setBallBeforeRunning];
+    _count = 0;
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedAround) userInfo:nil repeats:true];
+    
+//    //Cross
+//    [self setBallCrossBeforeRunning];
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(runningLedCross) userInfo:nil repeats:true];
 }
 
 - (void)setBallCrossBeforeRunning
@@ -275,7 +275,7 @@
     UIView* view = [self.view viewWithTag:index+100];
     if(view && [view isMemberOfClass:[UIImageView class]]){
         UIImageView* ball = (UIImageView*)view;
-        ball.image = [UIImage imageNamed:@"lightBall"];
+        ball.image = [UIImage imageNamed:@"lightBall3"];
     }
 }
 
@@ -284,7 +284,7 @@
     UIView* view = [self.view viewWithTag:(x+1)*100+y];
     if(view && [view isMemberOfClass:[UIImageView class]]){
         UIImageView* ball = (UIImageView*)view;
-        ball.image = [UIImage imageNamed:@"lightBall"];
+        ball.image = [UIImage imageNamed:@"lightBall3"];
     }
 }
 

@@ -29,14 +29,16 @@
     NSDictionary* array = @{SECTION: @"Array", MENU:@[
                                     @{TITLE: @"Collection", CLASS: @"Collection"},
                                     @{TITLE: @"ArrayCategory", CLASS: @"ArrayCategory"},
-                                    @{TITLE: @"CollectionAdvanced", CLASS: @"CollectionAdvanced"}
+                                    @{TITLE: @"CollectionAdvanced", CLASS: @"CollectionAdvanced"},
+                                     @{TITLE: @"ArrayCollection", CLASS: @"ArrayCollection"}
+                                    
                                     ]};
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
-                                    @{TITLE: @"IAmRich", CLASS: @"IAmRich"},
-                                    @{TITLE: @"IWeather", CLASS: @"IWeather"},
-                                    @{TITLE: @"RunningLED", CLASS: @"RunningLED"},
-                                    @{TITLE: @"ZigZag", CLASS: @"ZigZag"},
-                                    @{TITLE: @"UISlider", CLASS: @"Slider"}
+                                    @{TITLE: @"IAmRich-OK", CLASS: @"IAmRich"},
+                                    @{TITLE: @"IWeather-OK", CLASS: @"IWeather"},
+                                    @{TITLE: @"RunningLED-Advanced", CLASS: @"RunningLED"},
+                                    @{TITLE: @"ZigZag-OK", CLASS: @"ZigZag"},
+                                    @{TITLE: @"UISlider-OK", CLASS: @"Slider"}
                           ]};
     NSDictionary* cartoon = @{SECTION: @"Cartoon", MENU: @[
                                     @{TITLE: @"CampFire", CLASS: @"CampFire"},
