@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoGaiHaLan">
             <connections>
-                <outlet property="imgAirplane" destination="xeD-t3-RqQ" id="rma-6S-6m0"/>
                 <outlet property="imgBird" destination="oPY-07-Xck" id="hUb-gi-J0q"/>
                 <outlet property="imgDutchLady" destination="qIC-Ol-fIc" id="8H3-5k-p9g"/>
                 <outlet property="imgMilkBucket" destination="AxQ-Od-Rgm" id="7Cm-YU-XMA"/>
@@ -33,9 +32,6 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPY-07-Xck">
                     <rect key="frame" x="8" y="97" width="63" height="53"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xeD-t3-RqQ">
-                    <rect key="frame" x="174" y="264" width="67" height="42"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
