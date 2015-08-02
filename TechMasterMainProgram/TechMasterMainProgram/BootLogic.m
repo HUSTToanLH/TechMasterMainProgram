@@ -15,6 +15,10 @@
 {
     MainScreen* mainScreen = [[MainScreen alloc] initWithStyle:UITableViewStyleGrouped];
     //--------- From this line, please customize your menu data -----------
+    NSDictionary* codeCamp = @{SECTION: @"CodeCamp", MENU:@[
+                                        @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"}
+                                        ]};
+
     NSDictionary* demoSwift = @{SECTION: @"DemoSwift", MENU:@[
                                       @{TITLE: @"ChessView", CLASS: @"ChessView"},
                                       @{TITLE: @"BasicView", CLASS: @"BasicView"}
@@ -49,7 +53,7 @@
                                     @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}
                              ]};
     
-    mainScreen.menu = @[demoSwift, example, array, basic, cartoon, advanced];
+    mainScreen.menu = @[codeCamp, demoSwift, example, array, basic, cartoon, advanced];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from TechMaster.vn";
     //--------- End of customization -----------
