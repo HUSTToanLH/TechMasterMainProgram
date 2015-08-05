@@ -34,7 +34,8 @@
                                     @{TITLE: @"Collection", CLASS: @"Collection"},
                                     @{TITLE: @"ArrayCategory", CLASS: @"ArrayCategory"},
                                     @{TITLE: @"CollectionAdvanced", CLASS: @"CollectionAdvanced"},
-                                     @{TITLE: @"ArrayCollection", CLASS: @"ArrayCollection"}
+                                    @{TITLE: @"ArrayCollection", CLASS: @"ArrayCollection"},
+                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"}
                                     
                                     ]};
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
@@ -47,7 +48,8 @@
     NSDictionary* cartoon = @{SECTION: @"Cartoon", MENU: @[
                                     @{TITLE: @"CampFire", CLASS: @"CampFire"},
                                     @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"},
-                                    @{TITLE: @"FlyingBird", CLASS: @"FlyingBird"}
+                                    @{TITLE: @"FlyingBird", CLASS: @"FlyingBird"},
+                                    @{TITLE: @"DemoPlanet", CLASS: @"DemoPlanet"}
                                   ]};
     NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
                                     @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}
