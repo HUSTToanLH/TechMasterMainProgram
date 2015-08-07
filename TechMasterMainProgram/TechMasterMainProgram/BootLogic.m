@@ -35,7 +35,8 @@
                                     @{TITLE: @"ArrayCategory", CLASS: @"ArrayCategory"},
                                     @{TITLE: @"CollectionAdvanced", CLASS: @"CollectionAdvanced"},
                                     @{TITLE: @"ArrayCollection", CLASS: @"ArrayCollection"},
-                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"}
+                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"},
+                                    @{TITLE: @"ViewController", CLASS: @"ViewController"}
                                     
                                     ]};
     NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
@@ -49,7 +50,10 @@
                                     @{TITLE: @"CampFire", CLASS: @"CampFire"},
                                     @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"},
                                     @{TITLE: @"FlyingBird", CLASS: @"FlyingBird"},
-                                    @{TITLE: @"DemoPlanet", CLASS: @"DemoPlanet"}
+                                    @{TITLE: @"DemoPlanet", CLASS: @"DemoPlanet"},
+                                    @{TITLE: @"RollBall", CLASS: @"RollBall"},
+                                    @{TITLE: @"FallBall", CLASS: @"FallBall"},
+                                    @{TITLE: @"StartField", CLASS: @"StartField"}
                                   ]};
     NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
                                     @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}

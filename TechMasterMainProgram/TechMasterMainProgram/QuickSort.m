@@ -58,7 +58,7 @@
     for (NSUInteger i = 0U; i < len; i++) {
         u_int32_t r = arc4random() % [RANDOM_CHARACTER length];
         unichar c = [RANDOM_CHARACTER characterAtIndex:r];
-        [s appendFormat:@"%C", c];
+        [s appendFormat:@"%c", c];
     }
     return s;
 }
@@ -78,30 +78,34 @@
     int i = left, j = right;
     
     do {
-        while ([self getStringWithIndex:i] < pivot) {
+        while ([[self getStringWithIndex:i] compare:pivot] == NSOrderedAscending) {
             i++;
+//            NSComparisonResult res = [[self getStringWithIndex:i] compare:pivot];
         }
         
-        while ([self getStringWithIndex:j] > pivot) {
+        while ([[self getStringWithIndex:j] compare:pivot] == NSOrderedDescending) {
             j--;
         }
         
         if (i <= j) {
-            int temp = arr2[i];
-            arr2[i] = arr2[j];
-            arr2[j] = temp;
+            NSString *temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
             
             i++;
             j--;
+            if (array == nil) {
+                NSLog(@"i: %d, j: %d", i, j);
+            }
         }
     } while (i < j);
     
     if (left < j) {
-        [self quickSortCArrayWithLeft:left andRight:j];
+        [self quickSortNSArrayWithLeft:left andRight:j];
     }
     
     if (i < right) {
-        [self quickSortCArrayWithLeft:i andRight:right];
+        [self quickSortNSArrayWithLeft:i andRight:right];
     }
 }
 
@@ -148,9 +152,7 @@
 
 -(NSString *)getStringWithIndex:(int)index
 {
-    NSData *data = [array[index] dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *fooString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    return fooString;
+    return array[index];
 }
 
 -(void)printCArrayWithTitle:(NSString *)title
