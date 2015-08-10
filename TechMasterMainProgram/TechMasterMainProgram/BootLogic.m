@@ -38,7 +38,10 @@
                                     @{TITLE: @"NSArrayTruyVan_1", CLASS: @"NSArrayTruyVan_1"},
                                     @{TITLE: @"NSArrayTruyVan_2", CLASS: @"NSArrayTruyVan_2"},
                                     @{TITLE: @"NSArrayFindNumber", CLASS: @"NSArrayFindNumber"},
-                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"}
+                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"},
+                                    @{TITLE: @"ArrayDictionary", CLASS: @"ArrayDictionary"},
+                                    @{TITLE: @"TestLineView", CLASS: @"TestLineView"},
+                                    @{TITLE: @"TestLineView2", CLASS: @"TestLineView2"}
                                     ]};
     
     NSDictionary* uiView = @{SECTION: @"UIView", MENU: @[

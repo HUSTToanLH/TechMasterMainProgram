@@ -34,7 +34,7 @@
 
 -(void)rollingBall
 {
-    [UIView animateWithDuration:0.00001 animations:^{
+    [UIView animateWithDuration:0.01 animations:^{
         [self setPositionBall];
     } completion:^(BOOL finished) {
         [self rollingBall];

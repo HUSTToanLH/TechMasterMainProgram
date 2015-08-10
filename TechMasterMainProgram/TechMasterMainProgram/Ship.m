@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor blackColor];
 //    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self drawShipAndSea];
     [self animateSea];
@@ -107,6 +108,7 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [audioPlayer stop];
+    sea1 = sea2 = sea3 = ship = nil;
 }
 
 @end

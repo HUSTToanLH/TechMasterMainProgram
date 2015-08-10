@@ -59,7 +59,7 @@
     vanToc += giaToc;
     y += vanToc;
     if (y > maxHeight) {
-        vanToc = -vanToc*0.98;
+        vanToc = -vanToc*0.88;
         y = maxHeight;
     }
     
