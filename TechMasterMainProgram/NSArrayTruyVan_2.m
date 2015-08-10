@@ -1,21 +1,21 @@
 //
-//  ArrayCategory.m
+//  NSArrayTruyVan_2.m
 //  TechMasterMainProgram
 //
 //  Created by TaiND on 7/18/15.
 //  Copyright (c) 2015 GiangNX. All rights reserved.
 //
 
-#import "ArrayCategory.h"
+#import "NSArrayTruyVan_2.h"
 #import "NSArray+Extend.h"
 
-@interface ArrayCategory ()
+@interface NSArrayTruyVan_2 ()
 {
     NSArray* _Barcelona;
 }
 @end
 
-@implementation ArrayCategory
+@implementation NSArrayTruyVan_2
 
 - (void)viewDidLoad {
     [super viewDidLoad];

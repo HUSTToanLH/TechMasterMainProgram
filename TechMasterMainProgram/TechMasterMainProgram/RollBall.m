@@ -14,6 +14,7 @@
 @implementation RollBall
 {
     UIImageView *_rollBall;
+    CGFloat maxWidth;
     int _reverse;
 }
 
@@ -26,6 +27,7 @@
     [self.view addSubview:_rollBall];
     NSLog(@"x: %f, y: %f", _rollBall.center.x, _rollBall.center.y);
     
+    maxWidth = self.view.frame.size.width-30.0;
     [self performSelector:@selector(rollingBall) withObject:nil afterDelay:2];
 //    [self rollingBall];
 }
@@ -41,7 +43,7 @@
 
 -(void)setPositionBall
 {
-    if (_rollBall.center.x >= 384.0){
+    if (_rollBall.center.x >= maxWidth){
         _reverse = -1;
     }
     if (_rollBall.center.x <= 30.0){

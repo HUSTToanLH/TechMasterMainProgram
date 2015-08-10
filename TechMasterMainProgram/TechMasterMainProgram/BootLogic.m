@@ -15,51 +15,52 @@
 {
     MainScreen* mainScreen = [[MainScreen alloc] initWithStyle:UITableViewStyleGrouped];
     //--------- From this line, please customize your menu data -----------
-    NSDictionary* codeCamp = @{SECTION: @"CodeCamp", MENU:@[
-                                        @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"}
-                                        ]};
 
-    NSDictionary* demoSwift = @{SECTION: @"DemoSwift", MENU:@[
-                                      @{TITLE: @"ChessView", CLASS: @"ChessView"},
-                                      @{TITLE: @"BasicView", CLASS: @"BasicView"}
-                                      ]};
-    NSDictionary* example = @{SECTION: @"Example", MENU:@[
-                                      @{TITLE: @"DemoSelector", CLASS: @"DemoSelector"},
-                                      @{TITLE: @"Switch", CLASS: @"Switch"},
-                                      @{TITLE: @"SkewImage", CLASS: @"SkewImage"},
-                                      @{TITLE: @"SliderAdvanced", CLASS: @"SliderAdvanced"}
-                                    ]};
-
-    NSDictionary* array = @{SECTION: @"Array", MENU:@[
-                                    @{TITLE: @"Collection", CLASS: @"Collection"},
-                                    @{TITLE: @"ArrayCategory", CLASS: @"ArrayCategory"},
-                                    @{TITLE: @"CollectionAdvanced", CLASS: @"CollectionAdvanced"},
-                                    @{TITLE: @"ArrayCollection", CLASS: @"ArrayCollection"},
-                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"},
-                                    @{TITLE: @"ViewController", CLASS: @"ViewController"}
-                                    
-                                    ]};
-    NSDictionary* basic = @{SECTION: @"Basic", MENU: @[
-                                    @{TITLE: @"IAmRich-OK", CLASS: @"IAmRich"},
-                                    @{TITLE: @"IWeather-OK", CLASS: @"IWeather"},
-                                    @{TITLE: @"RunningLED-Advanced", CLASS: @"RunningLED"},
-                                    @{TITLE: @"ZigZag-OK", CLASS: @"ZigZag"},
-                                    @{TITLE: @"UISlider-OK", CLASS: @"Slider"}
-                          ]};
-    NSDictionary* cartoon = @{SECTION: @"Cartoon", MENU: @[
-                                    @{TITLE: @"CampFire", CLASS: @"CampFire"},
-                                    @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"},
-                                    @{TITLE: @"FlyingBird", CLASS: @"FlyingBird"},
-                                    @{TITLE: @"DemoPlanet", CLASS: @"DemoPlanet"},
-                                    @{TITLE: @"RollBall", CLASS: @"RollBall"},
-                                    @{TITLE: @"FallBall", CLASS: @"FallBall"},
-                                    @{TITLE: @"StartField", CLASS: @"StartField"}
-                                  ]};
-    NSDictionary* advanced = @{SECTION: @"Advanced", MENU: @[
-                                    @{TITLE: @"Advanced C", CLASS: @"AdvancedC"}
-                             ]};
+//    NSDictionary* iAmIOS = @{SECTION: @"iAmiOS", MENU: @[
+//                                    @{TITLE: @"IAmRich-OK", CLASS: @"IAmRich"},
+//                                    @{TITLE: @"IWeather-OK", CLASS: @"IWeather"},
+//                                    @{TITLE: @"ZigZag-OK", CLASS: @"ZigZag"}
+//                                    ]};
     
-    mainScreen.menu = @[codeCamp, demoSwift, example, array, basic, cartoon, advanced];
+    NSDictionary* example = @{SECTION: @"Example", MENU: @[
+                                    @{TITLE: @"PerformSelector", CLASS: @"DemoSelector"}
+                                    ]};
+    
+    NSDictionary* uiKit = @{SECTION: @"UIKit", MENU: @[
+//                                    @{TITLE: @"Slider", CLASS: @"Slider"},
+//                                    @{TITLE: @"SkewImage", CLASS: @"SkewImage"},
+                                    @{TITLE: @"RunningLED", CLASS: @"RunningLED"},
+                                    @{TITLE: @"SliderAdvanced", CLASS: @"SliderAdvanced"},
+                                    @{TITLE: @"Switch", CLASS: @"Switch"}
+                                    ]};
+    
+    NSDictionary* array = @{SECTION: @"Array", MENU:@[
+                                    @{TITLE: @"NSArrayTruyVan_1", CLASS: @"NSArrayTruyVan_1"},
+                                    @{TITLE: @"NSArrayTruyVan_2", CLASS: @"NSArrayTruyVan_2"},
+                                    @{TITLE: @"NSArrayFindNumber", CLASS: @"NSArrayFindNumber"},
+                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"}
+                                    ]};
+    
+    NSDictionary* uiView = @{SECTION: @"UIView", MENU: @[
+//                                    @{TITLE: @"ChessView", CLASS: @"ChessView"},
+//                                    @{TITLE: @"BasicView", CLASS: @"BasicView"},
+//                                    @{TITLE: @"CampFire", CLASS: @"CampFire"},
+//                                    @{TITLE: @"NestedSquare", CLASS: @"NestedSquare"},
+//                                    @{TITLE: @"FlyingBird", CLASS: @"FlyingBird"},
+                                     @{TITLE: @"StartField", CLASS: @"StartField"},
+                                     @{TITLE: @"RollBall", CLASS: @"RollBall"},
+                                     @{TITLE: @"DemoPlanet", CLASS: @"DemoPlanet"},
+                                     @{TITLE: @"DropBall", CLASS: @"DropBall"},
+                                     @{TITLE: @"Ship", CLASS: @"Ship"}
+                                     ]};
+    NSDictionary* codeCamp = @{SECTION: @"CodeCamp", MENU: @[
+                                       @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"}
+                                       ]};
+    
+    
+    
+//    mainScreen.menu = @[codeCamp, demoSwift, example, array, basic, cartoon, advanced];
+    mainScreen.menu = @[example, uiKit, array, uiView, codeCamp];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from TechMaster.vn";
     //--------- End of customization -----------

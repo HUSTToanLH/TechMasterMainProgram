@@ -1,13 +1,13 @@
 //
-//  SliderBasic.h
+//  Ship.h
 //  TechMasterMainProgram
 //
-//  Created by TaiND on 7/21/15.
+//  Created by ToanLH on 8/9/15.
 //  Copyright (c) 2015 GiangNX. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SliderBasic : UIViewController
+@interface Ship : UIViewController
 
 @end

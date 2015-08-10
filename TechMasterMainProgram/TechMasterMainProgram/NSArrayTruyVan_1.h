@@ -1,5 +1,5 @@
 //
-//  Collection.h
+//  NSArrayTruyVan_2.h
 //  TechMasterMainProgram
 //
 //  Created by TaiND on 7/17/15.
@@ -9,6 +9,6 @@
 #import "ConsoleScreen.h"
 #import "Player.h"
 
-@interface Collection : ConsoleScreen
+@interface NSArrayTruyVan_1 : ConsoleScreen
 
 @end

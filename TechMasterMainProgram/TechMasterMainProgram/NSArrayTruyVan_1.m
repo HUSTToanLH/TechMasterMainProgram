@@ -1,18 +1,18 @@
 //
-//  Collection.m
+//  NSArrayTruyVan_1.m
 //  TechMasterMainProgram
 //
 //  Created by TaiND on 7/17/15.
 //  Copyright (c) 2015 GiangNX. All rights reserved.
 //
 
-#import "Collection.h"
+#import "NSArrayTruyVan_1.h"
 
-@interface Collection ()
+@interface NSArrayTruyVan_1 ()
 
 @end
 
-@implementation Collection
+@implementation NSArrayTruyVan_1
 {
     NSArray* _Barcelona;
     NSMutableArray* _gK;

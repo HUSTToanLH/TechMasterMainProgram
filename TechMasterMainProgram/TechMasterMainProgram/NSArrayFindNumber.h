@@ -1,5 +1,5 @@
 //
-//  ArrayCollection.h
+//  NSArrayFindNumber.h
 //  TechMasterMainProgram
 //
 //  Created by ios31 on 7/30/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ArrayCollection : UIViewController
+@interface NSArrayFindNumber : UIViewController
 
 @end
