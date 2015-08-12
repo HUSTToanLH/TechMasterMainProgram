@@ -249,6 +249,7 @@
 		FABFFDD51B750D04004483AB /* starYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FABFFDD11B750D04004483AB /* starYellow.png */; };
 		FACB7E1B1B76E4F00058073B /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB7E191B76E4F00058073B /* Ship.m */; };
 		FACB7E1C1B76E4F00058073B /* Ship.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACB7E1A1B76E4F00058073B /* Ship.xib */; };
+		FAF9E87A1B7B996300018848 /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8791B7B996300018848 /* HexColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -284,8 +285,6 @@
 		039729321B783D220076F2C2 /* ArrayDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDictionary.m; sourceTree = "<group>"; };
 		039729331B783D220076F2C2 /* ArrayDictionary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrayDictionary.xib; sourceTree = "<group>"; };
 		039729361B7852620076F2C2 /* dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictionary.plist; sourceTree = "<group>"; };
-		03AD42F41B7AE1A2003C878F /* DemoColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoColor.h; path = UIView/HexColor/DemoColor.h; sourceTree = "<group>"; };
-		03AD42F51B7AE1A2003C878F /* DemoColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoColor.m; path = UIView/HexColor/DemoColor.m; sourceTree = "<group>"; };
 		03AD42F71B7AE2DE003C878F /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extend.h"; path = "UIView/HexColor/UIColor+Extend.h"; sourceTree = "<group>"; };
 		03AD42F81B7AE2DE003C878F /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extend.m"; path = "UIView/HexColor/UIColor+Extend.m"; sourceTree = "<group>"; };
 		03AD42FA1B7AF46B003C878F /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorView.h; path = UIView/HexColor/ColorView.h; sourceTree = "<group>"; };
@@ -534,6 +533,8 @@
 		FACB7E181B76E4F00058073B /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
 		FACB7E191B76E4F00058073B /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
 		FACB7E1A1B76E4F00058073B /* Ship.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ship.xib; sourceTree = "<group>"; };
+		FAF9E8781B7B996200018848 /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
+		FAF9E8791B7B996300018848 /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,9 +560,10 @@
 		03111AEA1B706E1E008CCD49 /* DemoPlanet */ = {
 			isa = PBXGroup;
 			children = (
-				03111AF91B70749A008CCD49 /* sun.png */,
-				03111AF11B706FA4008CCD49 /* earth.png */,
-				03111AF21B706FA4008CCD49 /* moon.png */,
+				FAF9E8731B7B933C00018848 /* image */,
+				03E4B4131B6F12D100FAA769 /* DemoPlanet.h */,
+				03E4B4141B6F12D100FAA769 /* DemoPlanet.m */,
+				03E4B4151B6F12D100FAA769 /* DemoPlanet.xib */,
 			);
 			name = DemoPlanet;
 			sourceTree = "<group>";
@@ -580,12 +582,12 @@
 		03AD42F31B7AE142003C878F /* HexColor */ = {
 			isa = PBXGroup;
 			children = (
-				03AD42F41B7AE1A2003C878F /* DemoColor.h */,
-				03AD42F51B7AE1A2003C878F /* DemoColor.m */,
 				03AD42FA1B7AF46B003C878F /* ColorView.h */,
 				03AD42FB1B7AF46B003C878F /* ColorView.m */,
 				03AD42F71B7AE2DE003C878F /* UIColor+Extend.h */,
 				03AD42F81B7AE2DE003C878F /* UIColor+Extend.m */,
+				FAF9E8781B7B996200018848 /* HexColor.h */,
+				FAF9E8791B7B996300018848 /* HexColor.m */,
 			);
 			name = HexColor;
 			sourceTree = "<group>";
@@ -607,33 +609,13 @@
 			children = (
 				03AD42F31B7AE142003C878F /* HexColor */,
 				03B363DC1B607B9B001C7264 /* DemoSwift */,
-				03B3640C1B60A3D7001C7264 /* NestedSquare.h */,
-				03B3640D1B60A3D7001C7264 /* NestedSquare.m */,
+				FAF9E8771B7B93A900018848 /* NestedSquare */,
 				FA9AA4E41B75FD50007C4285 /* CampFire */,
-				03B363E61B609A59001C7264 /* CampFire.h */,
-				03B363E71B609A59001C7264 /* CampFire.m */,
 				FA9AA4E51B75FD80007C4285 /* FlyingBird */,
-				03B3640F1B60C6CE001C7264 /* FlyingBird.h */,
-				03B364101B60C6CE001C7264 /* FlyingBird.m */,
 				03111AEA1B706E1E008CCD49 /* DemoPlanet */,
-				03E4B4131B6F12D100FAA769 /* DemoPlanet.h */,
-				03E4B4141B6F12D100FAA769 /* DemoPlanet.m */,
-				03E4B4151B6F12D100FAA769 /* DemoPlanet.xib */,
 				03B363E91B609B74001C7264 /* Ball */,
-				0343C3C91B73474000E0BBD1 /* RollBall.h */,
-				0343C3CA1B73474000E0BBD1 /* RollBall.m */,
-				0343C3CB1B73474000E0BBD1 /* RollBall.xib */,
-				0343C3D01B73689500E0BBD1 /* DropBall.h */,
-				0343C3D11B73689500E0BBD1 /* DropBall.m */,
-				0343C3D21B73689500E0BBD1 /* DropBall.xib */,
 				FABFFDCD1B750CE1004483AB /* StarField */,
-				03588A301B74A61D00291837 /* StartField.h */,
-				03588A311B74A61D00291837 /* StartField.m */,
-				03588A321B74A61D00291837 /* StartField.xib */,
 				FACB7E171B76E4CA0058073B /* Ship */,
-				FACB7E181B76E4F00058073B /* Ship.h */,
-				FACB7E191B76E4F00058073B /* Ship.m */,
-				FACB7E1A1B76E4F00058073B /* Ship.xib */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -641,7 +623,13 @@
 		03B363E91B609B74001C7264 /* Ball */ = {
 			isa = PBXGroup;
 			children = (
-				0343C3CE1B73485500E0BBD1 /* football.png */,
+				FAF9E8741B7B935700018848 /* image */,
+				0343C3C91B73474000E0BBD1 /* RollBall.h */,
+				0343C3CA1B73474000E0BBD1 /* RollBall.m */,
+				0343C3CB1B73474000E0BBD1 /* RollBall.xib */,
+				0343C3D01B73689500E0BBD1 /* DropBall.h */,
+				0343C3D11B73689500E0BBD1 /* DropBall.m */,
+				0343C3D21B73689500E0BBD1 /* DropBall.xib */,
 			);
 			name = Ball;
 			sourceTree = "<group>";
@@ -951,23 +939,9 @@
 		FA9AA4E41B75FD50007C4285 /* CampFire */ = {
 			isa = PBXGroup;
 			children = (
-				03B363EA1B609BA2001C7264 /* campFire01.gif */,
-				03B363EB1B609BA2001C7264 /* campFire02.gif */,
-				03B363EC1B609BA2001C7264 /* campFire03.gif */,
-				03B363ED1B609BA2001C7264 /* campFire04.gif */,
-				03B363EE1B609BA2001C7264 /* campFire05.gif */,
-				03B363EF1B609BA2001C7264 /* campFire06.gif */,
-				03B363F01B609BA2001C7264 /* campFire07.gif */,
-				03B363F11B609BA2001C7264 /* campFire08.gif */,
-				03B363F21B609BA2001C7264 /* campFire09.gif */,
-				03B363F31B609BA2001C7264 /* campFire10.gif */,
-				03B363F41B609BA2001C7264 /* campFire11.gif */,
-				03B363F51B609BA2001C7264 /* campFire12.gif */,
-				03B363F61B609BA2001C7264 /* campFire13.gif */,
-				03B363F71B609BA2001C7264 /* campFire14.gif */,
-				03B363F81B609BA2001C7264 /* campFire15.gif */,
-				03B363F91B609BA2001C7264 /* campFire16.gif */,
-				03B363FA1B609BA2001C7264 /* campFire17.gif */,
+				FAF9E8711B7B92F000018848 /* image */,
+				03B363E61B609A59001C7264 /* CampFire.h */,
+				03B363E71B609A59001C7264 /* CampFire.m */,
 			);
 			name = CampFire;
 			sourceTree = "<group>";
@@ -975,13 +949,9 @@
 		FA9AA4E51B75FD80007C4285 /* FlyingBird */ = {
 			isa = PBXGroup;
 			children = (
-				03B364121B60C792001C7264 /* bird0.png */,
-				03B364131B60C792001C7264 /* bird1.png */,
-				03B364141B60C792001C7264 /* bird2.png */,
-				03B364151B60C792001C7264 /* bird3.png */,
-				03B364161B60C792001C7264 /* bird4.png */,
-				03B364171B60C792001C7264 /* bird5.png */,
-				03B364181B60C792001C7264 /* jungle.jpg */,
+				FAF9E8721B7B931E00018848 /* image */,
+				03B3640F1B60C6CE001C7264 /* FlyingBird.h */,
+				03B364101B60C6CE001C7264 /* FlyingBird.m */,
 			);
 			name = FlyingBird;
 			sourceTree = "<group>";
@@ -989,10 +959,10 @@
 		FABFFDCD1B750CE1004483AB /* StarField */ = {
 			isa = PBXGroup;
 			children = (
-				FABFFDCE1B750D04004483AB /* starBlack.png */,
-				FABFFDCF1B750D04004483AB /* starBlue.png */,
-				FABFFDD01B750D04004483AB /* starWhite.png */,
-				FABFFDD11B750D04004483AB /* starYellow.png */,
+				FAF9E8751B7B936E00018848 /* image */,
+				03588A301B74A61D00291837 /* StartField.h */,
+				03588A311B74A61D00291837 /* StartField.m */,
+				03588A321B74A61D00291837 /* StartField.xib */,
 			);
 			name = StarField;
 			sourceTree = "<group>";
@@ -1051,13 +1021,100 @@
 		FACB7E171B76E4CA0058073B /* Ship */ = {
 			isa = PBXGroup;
 			children = (
+				FAF9E8761B7B938400018848 /* image&audio */,
+				FACB7E181B76E4F00058073B /* Ship.h */,
+				FACB7E191B76E4F00058073B /* Ship.m */,
+				FACB7E1A1B76E4F00058073B /* Ship.xib */,
+			);
+			name = Ship;
+			sourceTree = "<group>";
+		};
+		FAF9E8711B7B92F000018848 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				03B363EA1B609BA2001C7264 /* campFire01.gif */,
+				03B363EB1B609BA2001C7264 /* campFire02.gif */,
+				03B363EC1B609BA2001C7264 /* campFire03.gif */,
+				03B363ED1B609BA2001C7264 /* campFire04.gif */,
+				03B363EE1B609BA2001C7264 /* campFire05.gif */,
+				03B363EF1B609BA2001C7264 /* campFire06.gif */,
+				03B363F01B609BA2001C7264 /* campFire07.gif */,
+				03B363F11B609BA2001C7264 /* campFire08.gif */,
+				03B363F21B609BA2001C7264 /* campFire09.gif */,
+				03B363F31B609BA2001C7264 /* campFire10.gif */,
+				03B363F41B609BA2001C7264 /* campFire11.gif */,
+				03B363F51B609BA2001C7264 /* campFire12.gif */,
+				03B363F61B609BA2001C7264 /* campFire13.gif */,
+				03B363F71B609BA2001C7264 /* campFire14.gif */,
+				03B363F81B609BA2001C7264 /* campFire15.gif */,
+				03B363F91B609BA2001C7264 /* campFire16.gif */,
+				03B363FA1B609BA2001C7264 /* campFire17.gif */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		FAF9E8721B7B931E00018848 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				03B364121B60C792001C7264 /* bird0.png */,
+				03B364131B60C792001C7264 /* bird1.png */,
+				03B364141B60C792001C7264 /* bird2.png */,
+				03B364151B60C792001C7264 /* bird3.png */,
+				03B364161B60C792001C7264 /* bird4.png */,
+				03B364171B60C792001C7264 /* bird5.png */,
+				03B364181B60C792001C7264 /* jungle.jpg */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		FAF9E8731B7B933C00018848 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				03111AF91B70749A008CCD49 /* sun.png */,
+				03111AF11B706FA4008CCD49 /* earth.png */,
+				03111AF21B706FA4008CCD49 /* moon.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		FAF9E8741B7B935700018848 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				0343C3CE1B73485500E0BBD1 /* football.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		FAF9E8751B7B936E00018848 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				FABFFDCE1B750D04004483AB /* starBlack.png */,
+				FABFFDCF1B750D04004483AB /* starBlue.png */,
+				FABFFDD01B750D04004483AB /* starWhite.png */,
+				FABFFDD11B750D04004483AB /* starYellow.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		FAF9E8761B7B938400018848 /* image&audio */ = {
+			isa = PBXGroup;
+			children = (
 				FAAC378E1B76F5640000B694 /* sea1.png */,
 				FAAC378F1B76F5640000B694 /* sea2.png */,
 				FAAC37901B76F5640000B694 /* sea3.png */,
 				FAAC37911B76F5640000B694 /* ship.png */,
 				FAAC378C1B76F5560000B694 /* SeeYouAgain.mp3 */,
 			);
-			name = Ship;
+			name = "image&audio";
+			sourceTree = "<group>";
+		};
+		FAF9E8771B7B93A900018848 /* NestedSquare */ = {
+			isa = PBXGroup;
+			children = (
+				03B3640C1B60A3D7001C7264 /* NestedSquare.h */,
+				03B3640D1B60A3D7001C7264 /* NestedSquare.m */,
+			);
+			name = NestedSquare;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1346,6 +1403,7 @@
 				036D984A1B5CCF8D00E05377 /* DemoSelector.m in Sources */,
 				03E4B4161B6F12D100FAA769 /* DemoPlanet.m in Sources */,
 				03F6B5521B54A61A00E9B3FE /* ConsoleScreen.m in Sources */,
+				FAF9E87A1B7B996300018848 /* HexColor.m in Sources */,
 				03AD42F91B7AE2DE003C878F /* UIColor+Extend.m in Sources */,
 				03F6B5501B54A61A00E9B3FE /* AppDelegate.m in Sources */,
 				0343C3CC1B73474000E0BBD1 /* RollBall.m in Sources */,

@@ -1,20 +1,20 @@
 //
-//  DemoColor.m
+//  HexColor.m
 //  TechMasterMainProgram
 //
-//  Created by TaiND on 8/12/15.
+//  Created by ToanLH on 8/12/15.
 //  Copyright (c) 2015 GiangNX. All rights reserved.
 //
 
-#import "DemoColor.h"
+#import "HexColor.h"
 #import "UIColor+Extend.h"
 #import "ColorView.h"
 
-@interface DemoColor ()<UITextFieldDelegate>
+@interface HexColor ()<UITextFieldDelegate>
 
 @end
 
-@implementation DemoColor
+@implementation HexColor
 {
     UITextField *txfHex, *txfRed, *txfGreen, *txfBlue;
     UILabel *lblContent;
@@ -61,7 +61,7 @@
     NSArray *epArray = @[ep1, ep2, ep3, ep4, ep5, ep6];
     cpSum = @[cpArray, dpArray, epArray];
     
-//    [self initGridColorView];
+    //    [self initGridColorView];
     timer = [NSTimer scheduledTimerWithTimeInterval:3
                                              target:self
                                            selector:@selector(animateGridColor)
@@ -135,13 +135,13 @@
     
     txfHex.autocapitalizationType = UITextAutocapitalizationTypeNone;
     
-//    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 25)];
-//    button.center = CGPointMake(2*margin+txfWidth+25, centerY+(txfHeight+margin)*0.5);
-//    button.backgroundColor = [[UIColor alloc] initColorHex:@"#FF9E9D" alpha:1];
-//    [[button layer] setCornerRadius:6.0f];
-//    [[button layer] setMasksToBounds:YES];
-//    [[button layer] setBorderWidth:0.5f];
-//    [self.view addSubview:button];
+    //    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 25)];
+    //    button.center = CGPointMake(2*margin+txfWidth+25, centerY+(txfHeight+margin)*0.5);
+    //    button.backgroundColor = [[UIColor alloc] initColorHex:@"#FF9E9D" alpha:1];
+    //    [[button layer] setCornerRadius:6.0f];
+    //    [[button layer] setMasksToBounds:YES];
+    //    [[button layer] setBorderWidth:0.5f];
+    //    [self.view addSubview:button];
 }
 
 - (void)addLabelAndTextField:(NSString*)title centerX:(CGFloat)centerX width:(CGFloat)cWidth
@@ -248,7 +248,7 @@
     int green = [txfGreen.text intValue];
     int blue = [txfBlue.text intValue];
     txfHex.text  = [[NSString stringWithFormat:@"#%02x%02x%02x",
-                            ((int)red),((int)green),((int)blue)] uppercaseString];
+                     ((int)red),((int)green),((int)blue)] uppercaseString];
 }
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -317,17 +317,18 @@
             return NO;
         }
         
- 
+        
         NSString *rgbCode = [textField.text stringByAppendingString:string];
         NSString *key;
-        if ([txfRed is]) {
-            <#statements#>
-        }
-
+//        if ([txfRed is]) {
+//            <#statements#>
+//        }
+        
         
         [self convertColorToHex];
     }
     return YES;
 }
+
 
 @end
