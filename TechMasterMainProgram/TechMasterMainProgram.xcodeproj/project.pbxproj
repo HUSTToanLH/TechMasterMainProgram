@@ -582,12 +582,12 @@
 		03AD42F31B7AE142003C878F /* HexColor */ = {
 			isa = PBXGroup;
 			children = (
+				FAF9E8781B7B996200018848 /* HexColor.h */,
+				FAF9E8791B7B996300018848 /* HexColor.m */,
 				03AD42FA1B7AF46B003C878F /* ColorView.h */,
 				03AD42FB1B7AF46B003C878F /* ColorView.m */,
 				03AD42F71B7AE2DE003C878F /* UIColor+Extend.h */,
 				03AD42F81B7AE2DE003C878F /* UIColor+Extend.m */,
-				FAF9E8781B7B996200018848 /* HexColor.h */,
-				FAF9E8791B7B996300018848 /* HexColor.m */,
 			);
 			name = HexColor;
 			sourceTree = "<group>";

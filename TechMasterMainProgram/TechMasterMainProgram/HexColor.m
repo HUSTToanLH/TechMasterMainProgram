@@ -174,6 +174,7 @@
         txfRed.placeholder = title;
         txfRed.font = [UIFont fontWithName:@"Helvetica" size:13];
         txfRed.backgroundColor = [[UIColor alloc] initColorHex:@"#dae5e8" alpha:1];
+        txfRed.tag = 1;
         [self.view addSubview:txfRed];
     }
     if ([title isEqual:@"Green"]) {
@@ -184,6 +185,7 @@
         txfGreen.placeholder = title;
         txfGreen.font = [UIFont fontWithName:@"Helvetica" size:13];
         txfGreen.backgroundColor = [[UIColor alloc] initColorHex:@"#dae5e8" alpha:1];
+        txfGreen.tag = 2;
         [self.view addSubview:txfGreen];
     }
     if ([title isEqual:@"Blue"]) {
@@ -194,6 +196,7 @@
         txfBlue.placeholder = title;
         txfBlue.font = [UIFont fontWithName:@"Helvetica" size:13];
         txfBlue.backgroundColor = [[UIColor alloc] initColorHex:@"#dae5e8" alpha:1];
+        txfBlue.tag = 3;
         [self.view addSubview:txfBlue];
     }
     
@@ -242,13 +245,25 @@
     }
 }
 
--(void)convertColorToHex
+-(void)convertColorToHex:(NSString*)colorValue withTag:(NSInteger)tag
 {
     int red = [txfRed.text intValue];
     int green = [txfGreen.text intValue];
     int blue = [txfBlue.text intValue];
+    
+    if (txfRed.tag == tag) {
+        red = [colorValue intValue];
+    }
+    else if (txfGreen.tag == tag){
+        green = [colorValue intValue];
+    }
+    else if (txfBlue.tag == tag){
+        blue = [colorValue intValue];
+    }
+    
     txfHex.text  = [[NSString stringWithFormat:@"#%02x%02x%02x",
                      ((int)red),((int)green),((int)blue)] uppercaseString];
+    lblContent.backgroundColor = [[UIColor alloc] initColorHex:txfHex.text alpha:1];
 }
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -293,8 +308,8 @@
             hexcode = [textField.text stringByAppendingString:string];
         }
         else{
-            if (textField.text.length >= 2) {
-                hexcode = [textField.text substringToIndex:textField.text.length-2];
+            if (textField.text.length >= 1) {
+                hexcode = [textField.text substringToIndex:textField.text.length-1];
             }
         }
         [self convertColorToRGB:hexcode];
@@ -308,7 +323,7 @@
             }
         }
         
-        if ([[textField.text stringByAppendingString:string] intValue] >= 255) {
+        if ([[textField.text stringByAppendingString:string] intValue] > 255) {
             return NO;
         }
         
@@ -317,15 +332,28 @@
             return NO;
         }
         
+        NSString *rgbCode;
+        if (![string isEqual:@""]) {
+            rgbCode = [textField.text stringByAppendingString:string];
+        }
+        else{
+            if (textField.text.length >= 1) {
+                rgbCode = [textField.text substringToIndex:textField.text.length-1];
+            }
+        }
         
-        NSString *rgbCode = [textField.text stringByAppendingString:string];
-        NSString *key;
-//        if ([txfRed is]) {
-//            <#statements#>
-//        }
-        
-        
-        [self convertColorToHex];
+        NSInteger tag;
+        if ([txfRed isFirstResponder]) {
+            tag = txfRed.tag;
+        }
+        else if ([txfGreen isFirstResponder]){
+            tag = txfGreen.tag;
+        }
+        else if ([txfBlue isFirstResponder]){
+            tag = txfBlue.tag;
+        }
+
+        [self convertColorToHex:rgbCode withTag:tag];
     }
     return YES;
 }
