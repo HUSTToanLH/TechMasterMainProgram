@@ -54,7 +54,8 @@
                                      @{TITLE: @"RollBall", CLASS: @"RollBall"},
                                      @{TITLE: @"DemoPlanet", CLASS: @"DemoPlanet"},
                                      @{TITLE: @"DropBall", CLASS: @"DropBall"},
-                                     @{TITLE: @"Ship", CLASS: @"Ship"}
+                                     @{TITLE: @"Ship", CLASS: @"Ship"},
+                                     @{TITLE: @"HexColor", CLASS: @"DemoColor"}
                                      ]};
     NSDictionary* codeCamp = @{SECTION: @"CodeCamp", MENU: @[
                                        @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"}

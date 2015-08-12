@@ -11,3 +11,6 @@
 @interface TestLineView : UIViewController
 
 @end
+@interface CustomScrollview : UIScrollView
+
+@end
