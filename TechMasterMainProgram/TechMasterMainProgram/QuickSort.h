@@ -9,5 +9,6 @@
 #import "ConsoleScreen.h"
 
 @interface QuickSort : ConsoleScreen
-
+-(NSString *)getStringWithIndex:(int)index;
+-(void)quickSortNSArrayWithLeft:(int)left andRight:(int)right;
 @end

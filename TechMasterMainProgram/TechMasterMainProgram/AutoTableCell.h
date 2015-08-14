@@ -10,4 +10,5 @@
 
 @interface AutoTableCell : UITableViewCell
 -(void)setContent:(NSString *)content;
+-(NSString*)getContent;
 @end

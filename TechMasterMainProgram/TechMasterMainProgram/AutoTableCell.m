@@ -8,7 +8,6 @@
 
 #import "AutoTableCell.h"
 @interface AutoTableCell()
-
 @property (weak, nonatomic) IBOutlet UILabel *lblContent;
 @end
 @implementation AutoTableCell
@@ -25,6 +24,10 @@
 
 -(void)setContent:(NSString *)content{
     _lblContent.text = content;
+}
+
+-(NSString*)getContent{
+    return _lblContent.text;
 }
 
 @end

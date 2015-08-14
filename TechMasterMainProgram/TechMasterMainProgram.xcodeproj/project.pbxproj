@@ -13,9 +13,6 @@
 		03111AF51B706FA4008CCD49 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03111AF21B706FA4008CCD49 /* moon.png */; };
 		03111AFA1B70749A008CCD49 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 03111AF91B70749A008CCD49 /* sun.png */; };
 		03111AFD1B7094B8008CCD49 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 03111AFC1B7094B8008CCD49 /* QuickSort.m */; };
-		0341F9A81B7C9819004B41BE /* TestAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341F9A61B7C9819004B41BE /* TestAVPlayer.m */; };
-		0341F9A91B7C9819004B41BE /* TestAVPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0341F9A71B7C9819004B41BE /* TestAVPlayer.xib */; };
-		0341F9AB1B7C98A2004B41BE /* DTTLTD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0341F9AA1B7C98A2004B41BE /* DTTLTD.mp3 */; };
 		0341F9AE1B7C9B8A004B41BE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0341F9AD1B7C9B8A004B41BE /* AVKit.framework */; };
 		0343C3CC1B73474000E0BBD1 /* RollBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343C3CA1B73474000E0BBD1 /* RollBall.m */; };
 		0343C3CD1B73474000E0BBD1 /* RollBall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0343C3CB1B73474000E0BBD1 /* RollBall.xib */; };
@@ -265,10 +262,6 @@
 		03111AF91B70749A008CCD49 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
 		03111AFB1B7094B8008CCD49 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		03111AFC1B7094B8008CCD49 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
-		0341F9A51B7C9819004B41BE /* TestAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAVPlayer.h; sourceTree = "<group>"; };
-		0341F9A61B7C9819004B41BE /* TestAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAVPlayer.m; sourceTree = "<group>"; };
-		0341F9A71B7C9819004B41BE /* TestAVPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestAVPlayer.xib; sourceTree = "<group>"; };
-		0341F9AA1B7C98A2004B41BE /* DTTLTD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DTTLTD.mp3; sourceTree = "<group>"; };
 		0341F9AD1B7C9B8A004B41BE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		0343C3C91B73474000E0BBD1 /* RollBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollBall.h; sourceTree = "<group>"; };
 		0343C3CA1B73474000E0BBD1 /* RollBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollBall.m; sourceTree = "<group>"; };
@@ -578,17 +571,6 @@
 			name = DemoPlanet;
 			sourceTree = "<group>";
 		};
-		0341F9A41B7C97C7004B41BE /* TestAVPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				0341F9AA1B7C98A2004B41BE /* DTTLTD.mp3 */,
-				0341F9A51B7C9819004B41BE /* TestAVPlayer.h */,
-				0341F9A61B7C9819004B41BE /* TestAVPlayer.m */,
-				0341F9A71B7C9819004B41BE /* TestAVPlayer.xib */,
-			);
-			name = TestAVPlayer;
-			sourceTree = "<group>";
-		};
 		036D98431B5CB42A00E05377 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,7 +610,6 @@
 		03B363E51B609A29001C7264 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				0341F9A41B7C97C7004B41BE /* TestAVPlayer */,
 				03AD42F31B7AE142003C878F /* HexColor */,
 				03B363DC1B607B9B001C7264 /* DemoSwift */,
 				FAF9E8771B7B93A900018848 /* NestedSquare */,
@@ -1203,7 +1184,6 @@
 				03B364AF1B686C5F001C7264 /* messi.png in Resources */,
 				BE2510561B6DEF5100A9EFBD /* frame_8_delay-0.25s.gif in Resources */,
 				FAAC378D1B76F5560000B694 /* SeeYouAgain.mp3 in Resources */,
-				0341F9A91B7C9819004B41BE /* TestAVPlayer.xib in Resources */,
 				BE2510741B6DEF5100A9EFBD /* frame_38_delay-0.25s.gif in Resources */,
 				BE2510761B6DEF5100A9EFBD /* frame_40_delay-0.25s.gif in Resources */,
 				0343C3CF1B73485500E0BBD1 /* football.png in Resources */,
@@ -1237,7 +1217,6 @@
 				03B3640B1B609BA2001C7264 /* campFire17.gif in Resources */,
 				03B3641E1B60C792001C7264 /* bird5.png in Resources */,
 				BE4B65AC1B6A467F00B910EF /* OffWhite.png in Resources */,
-				0341F9AB1B7C98A2004B41BE /* DTTLTD.mp3 in Resources */,
 				03B3641B1B60C792001C7264 /* bird2.png in Resources */,
 				03B364AB1B675AE8001C7264 /* sanbong2.png in Resources */,
 				03B364081B609BA2001C7264 /* campFire14.gif in Resources */,
@@ -1442,7 +1421,6 @@
 				03C9EDE41B578456007C0F9D /* ZigZag.m in Sources */,
 				03B363DF1B607CAA001C7264 /* ChessView.m in Sources */,
 				FACB7E1B1B76E4F00058073B /* Ship.m in Sources */,
-				0341F9A81B7C9819004B41BE /* TestAVPlayer.m in Sources */,
 				BE4B65B91B6A4AC100B910EF /* NSArrayFindNumber.m in Sources */,
 				03588A331B74A61D00291837 /* StartField.m in Sources */,
 				03EEDD361B78977500011E35 /* TestLineView.m in Sources */,
