@@ -7,7 +7,7 @@
 //
 
 #import "MutableArrayCategory.h"
-
+#define VALIDATE_CHARACTER @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
 @interface MutableArrayCategory ()<UIScrollViewDelegate, UITextFieldDelegate>
 
 @end
@@ -87,6 +87,13 @@
         NSString *word = arrayContent[0];
         atCenter = CGPointMake(margin + wWord*(word.length)/2, 10);
     }
+    
+    
+    //NSSet
+//    NSCountedSet *setCounted = [[NSCountedSet alloc] initWithArray:arrayContent];
+//    for (NSString *object in setCounted) {
+//        NSLog(@"%@ - %lu", object, (unsigned long)[setCounted countForObject:object]);
+//    }
 }
 
 - (int)lineCountForLabel:(UILabel *)label
@@ -268,8 +275,17 @@
 {
     NSMutableAttributedString *attrStringContent = [labelContent.attributedText mutableCopy];
 
+    NSMutableString *mutableString = [[NSMutableString alloc] init];
+    for (int i = 0; i < strAppend.length; i++) {
+        NSString *string = [NSString stringWithFormat:@"%c",[strAppend characterAtIndex:i]];
+        if ([VALIDATE_CHARACTER rangeOfString:string
+                                      options:NSCaseInsensitiveSearch].location != NSNotFound) {
+            [mutableString appendString:string];
+        }
+    }
     
-    if ([[strAppend uppercaseString] isEqual:[strKey uppercaseString]]) {
+    
+    if ([[mutableString uppercaseString] isEqual:[strKey uppercaseString]]) {
         NSAttributedString *tailString = [[NSAttributedString alloc] initWithString:strAppend attributes:dicHightLight];
         NSString *location = labelContent.text;
         [arrayRange addObject:location];
