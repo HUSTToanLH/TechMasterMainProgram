@@ -7,7 +7,10 @@
 //
 
 #import "MutableArrayCategory.h"
-#define VALIDATE_CHARACTER @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+
+#define VALIDATE_CHARACTER @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890'"
+#define CHARACTERLESS @[@"i", @"the", @"am", @"is", @"to", @"an", @"were", @"was", @"demonstration"]
+
 @interface MutableArrayCategory ()<UIScrollViewDelegate, UITextFieldDelegate>
 
 @end
@@ -16,17 +19,18 @@
 {
     UIScrollView *mainScrollView;
     UITextField *textfield;
-    UIButton *button;
-    CGFloat width, height, margin, wWord, hWord, space, contentWidth;
+    UIButton *button, *buttonAll, *buttonChange;
+    CGFloat width, height, margin, wWord, hWord, space, contentWidth, penWidth;
     CGPoint atCenter;
-    NSTimer *timer;
+    NSTimer *timer, *timerAll;
     NSArray *arrayContent;
-    NSMutableArray *arrayRange;
+    NSMutableArray *arrayAllButton;
+    NSMutableArray *arrayRange, *arrayAll, *arrayTransfer;
     int counter, presentLine;
     UILabel *labelContent;
     NSDictionary *dic, *dicHightLight;
     NSString *strKey;
-    BOOL isAction;
+    BOOL isAction,isActionAll, isAll, isOne;
     UIImageView *pen;
 }
 
@@ -43,25 +47,37 @@
     wWord = 10;
     hWord = 20;
     space = 3;
+    isAll = NO;
+    isOne = NO;
     
     dicHightLight = @{NSFontAttributeName : [UIFont fontWithName:@"Snell Roundhand" size:16], NSForegroundColorAttributeName : [UIColor greenColor]};
     dic = @{NSFontAttributeName : [UIFont fontWithName:@"Snell Roundhand" size:16], NSForegroundColorAttributeName : [UIColor blackColor]};
     
-    [self initParameter];
-    
-    [self initArrayContentWithFileName:@"LutherKing" andType:@"rtf"];
     [self initContentLabel];
+    [self initParameter];
+    [self initArrayContentWithFileName:@"LutherKing" andType:@"rtf"];
+    
     
 }
 
 -(void)initParameter
 {
+    [button setTitle:@"GO" forState:UIControlStateNormal];
+    labelContent.text = @"";
+    labelContent.attributedText = [[NSMutableAttributedString alloc] initWithString:@""];
+    CGRect frame = labelContent.frame;
+    frame.origin.y = 0;
+    frame.size.height = hWord;
+    labelContent.frame = frame;
     counter = 0;
     presentLine = 1;
     strKey = @"";
     arrayRange = [NSMutableArray new];
+    arrayAllButton = [NSMutableArray new];
     isAction = NO;
+    isActionAll = NO;
     timer = nil;
+    
 }
 
 - (void)initArrayContentWithFileName:(NSString*)fileName andType:(NSString*)fileType
@@ -82,18 +98,6 @@
     }
     
     arrayContent = [myString componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    
-    if (arrayContent.count > 0) {
-        NSString *word = arrayContent[0];
-        atCenter = CGPointMake(margin + wWord*(word.length)/2, 10);
-    }
-    
-    
-    //NSSet
-//    NSCountedSet *setCounted = [[NSCountedSet alloc] initWithArray:arrayContent];
-//    for (NSString *object in setCounted) {
-//        NSLog(@"%@ - %lu", object, (unsigned long)[setCounted countForObject:object]);
-//    }
 }
 
 - (int)lineCountForLabel:(UILabel *)label
@@ -126,7 +130,7 @@
     textfield.delegate = self;
     [self.view addSubview: textfield];
     
-    button = [[UIButton alloc] initWithFrame:CGRectMake(textfield.frame.origin.x+textfield.frame.size.width+margin, textfield.frame.origin.y, 50, 30)];
+    button = [[UIButton alloc] initWithFrame:CGRectMake(textfield.frame.origin.x+textfield.frame.size.width+2, textfield.frame.origin.y, 50, 30)];
     [button setTitle:@"GO" forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont systemFontOfSize:13]];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -136,6 +140,27 @@
     button.backgroundColor = [UIColor greenColor];
     [button addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    button.enabled = YES;
+    
+    buttonAll = [[UIButton alloc] initWithFrame:CGRectMake(button.frame.origin.x+button.frame.size.width+24, button.frame.origin.y, 50, 30)];
+    [buttonAll setTitle:@"ALL" forState:UIControlStateNormal];
+    [buttonAll.titleLabel setFont:[UIFont systemFontOfSize:13]];
+    [buttonAll setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [[buttonAll layer] setCornerRadius:4.0f];
+    [[buttonAll layer] setMasksToBounds:YES];
+    [[buttonAll layer] setBorderWidth:0.0f];
+    buttonAll.backgroundColor = [UIColor grayColor];
+    [buttonAll addTarget:self action:@selector(onClickAll) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:buttonAll];
+    buttonAll.enabled = NO;
+    
+    buttonChange = [[UIButton alloc] initWithFrame:CGRectMake(button.frame.origin.x+button.frame.size.width+2, button.frame.origin.y, 20, 30)];
+    [[buttonChange layer] setCornerRadius:4.0f];
+    [[buttonChange layer] setMasksToBounds:YES];
+    [[buttonChange layer] setBorderWidth:0.0f];
+    buttonChange.backgroundColor = [UIColor redColor];
+    [buttonChange addTarget:self action:@selector(onClickChange) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:buttonChange];
 
     
     mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 5*margin+5, width, height)];
@@ -163,19 +188,38 @@
     
 }
 
+-(void)onClickChange
+{
+    [self stopTimer];
+    [self initPen];
+    [self initParameter];
+    if (button.enabled == YES) {
+        button.enabled = NO;
+        button.backgroundColor = [UIColor grayColor];
+        textfield.enabled = NO;
+        buttonAll.enabled = YES;
+        buttonAll.backgroundColor = [UIColor greenColor];
+    }
+    else if (buttonAll.enabled == YES){
+        buttonAll.enabled = NO;
+        buttonAll.backgroundColor = [UIColor grayColor];
+        button.enabled = YES;
+        button.backgroundColor = [UIColor greenColor];
+        textfield.enabled = YES;
+    }
+}
+
 -(void)initPen
 {
     [pen stopAnimating];
-    pen = [[UIImageView alloc] initWithFrame:CGRectMake(2*margin, margin, 100, 100)];
-    NSMutableArray *pens = [[NSMutableArray alloc] initWithCapacity:9];
-    for (int i = 1; i < 10; i++) {
-        NSString *fileName = [NSString stringWithFormat:@"sig%d.png",i];
-        UIImage *imgPen;
-        if([UIImage imageNamed:fileName] != nil){
-            imgPen = [UIImage imageNamed:fileName];
-            [pens addObject:imgPen];
-        }
-    }
+    pen = [[UIImageView alloc] initWithFrame:CGRectMake(-margin, margin, 100, 100)];
+    NSMutableArray *pens = [[NSMutableArray alloc] initWithCapacity:2];
+    NSString *fileName = @"sig6.png";
+    NSString *fileName2 = @"sig7.png";
+    UIImage *imgPen = [UIImage imageNamed:fileName];
+    UIImage *imgPen2 = [UIImage imageNamed:fileName2];
+    [pens addObject:imgPen];
+    [pens addObject:imgPen2];
     pen.animationImages = pens;
     pen.animationDuration = 1;
     pen.animationRepeatCount = -1;
@@ -185,6 +229,10 @@
 
 -(void)onClick
 {
+    [self stopTimer];
+    isAll = NO;
+    isOne = YES;
+    [self setArrayTransfer];
     if (![textfield.text isEqual:@""]) {
         NSLog(@"%@", button.titleLabel.text);
         if (![button.titleLabel.text isEqual:@"GO"] && isAction == YES) {
@@ -194,11 +242,7 @@
         }
         [self.view endEditing:YES];
         strKey = textfield.text;
-        timer = [NSTimer scheduledTimerWithTimeInterval:0.1
-                                                 target:self
-                                               selector:@selector(writeText)
-                                               userInfo:nil
-                                                repeats:true];
+        [self startTimer];
         [button setTitle:@"0" forState:UIControlStateNormal];
         isAction = YES;
     }
@@ -212,20 +256,117 @@
     }
 }
 
-- (void)writeText
+- (void)startTimer
 {
-    if (counter < arrayContent.count) {
-        labelContent.text = [labelContent.text stringByAppendingString:@" "];
-        [self setHightLightText:arrayContent[counter]];
+    if (!timer) {
+        timer = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                 target:self
+                                               selector:@selector(writeText)
+                                               userInfo:nil
+                                                repeats:true];
+    }
+}
+
+- (void)startTimerAll
+{
+    if (!timerAll) {
+        timerAll = [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                 target:self
+                                               selector:@selector(writeTextAll)
+                                               userInfo:nil
+                                                repeats:true];
+    }
+}
+
+-(void)stopTimer
+{
+    if ([timer isValid]) {
+        [timer invalidate];
+    }
+    timer = nil;
+    
+    if ([timerAll isValid]) {
+        [timerAll invalidate];
+    }
+    timerAll = nil;
+}
+
+-(void)onClickAll
+{
+    [self stopTimer];
+    isAll = YES;
+    isOne = NO;
+    [self setArrayTransfer];
+    pen.image = nil;
+//    [self initPen];
+    
+    if (isActionAll == YES) {
+        isActionAll = NO;
+        [self stopTimer];
+        return;
+    }
+    else
+    {
+        arrayAll = [[NSMutableArray alloc] initWithCapacity:arrayContent.count];
+        for (NSString *object in arrayContent) {
+            if (![object isEqual:@"\n"]) {
+                NSMutableString *mutableString = [NSMutableString new];
+                for (int i = 0; i < object.length; i++) {
+                    NSString *content = [NSString stringWithFormat:@"%c",[object characterAtIndex:i]];
+                    if ([VALIDATE_CHARACTER rangeOfString:content
+                                                  options:NSCaseInsensitiveSearch].location != NSNotFound) {
+                        [mutableString appendString:[content lowercaseString]];
+                    }
+                }
+                [arrayAll addObject:mutableString];
+            }
+        }
+        
+        NSCountedSet *countedSet = [[NSCountedSet alloc] initWithArray:arrayAll];
+        //    NSMutableString *countedString = [NSMutableString new];
+        for (NSString *string in countedSet) {
+            if (string.length > 0 && [CHARACTERLESS containsObject:string] == FALSE) {
+                [arrayAllButton addObject:[NSString stringWithFormat:@"%@ : %lu",string, (unsigned long)[countedSet countForObject:string]]];
+                [arrayAllButton addObject:@"\n"];
+            }
+        }
+        
+//        [self initParameter];
+        isActionAll = YES;
+        [self startTimerAll];
+        
+    }
+}
+
+-(void)setArrayTransfer
+{
+    arrayTransfer = [NSMutableArray new];
+    if (isAll == YES && isOne == NO) {
+        arrayTransfer = arrayAllButton;
+        penWidth = labelContent.frame.size.width/4;
+    }
+    else if (isOne == YES && isAll == NO){
+        arrayTransfer = [[NSMutableArray alloc] initWithArray:arrayContent];
+        penWidth = labelContent.frame.size.width;
+    }
+    
+}
+
+- (void)writeTextAll
+{
+    if (counter < arrayTransfer.count) {
+        strKey = @"";
+        [self setHightLightText:arrayTransfer[counter]];
         counter++;
         
-        if ([self lineCountForLabel:labelContent] > presentLine) {
-            presentLine++;
+        presentLine++;
+        if (presentLine%2 == 0) {
             CGRect frame = labelContent.frame;
             if (frame.size.height > height - 200) {
                 frame.origin.y = frame.origin.y - hWord;
             }
-            frame.size.height = frame.size.height + hWord;;
+            frame.size.height = frame.size.height + hWord;
+            NSLog(@"labelFrame: %f",frame.size.height);
             labelContent.frame = frame;
             
             CGRect frame2 = pen.frame;
@@ -237,7 +378,7 @@
         }
         else{
             CGRect frame2 = pen.frame;
-            if (pen.frame.origin.x < labelContent.frame.size.width) {
+            if (pen.frame.origin.x < penWidth) {
                 frame2.origin.x += 30;
             }
             else{
@@ -246,10 +387,6 @@
             
             pen.frame = frame2;
         }
-        
-
-        
-//        NSLog(@"%d",[self lineCountForLabel:labelContent]);
     }
     else{
         [pen stopAnimating];
@@ -259,13 +396,61 @@
             frame.origin.y = 0;
             labelContent.frame = frame;
             
-//            CGRect frame2 = pen.frame;
-//            frame.size.height = 250;
-//            frame.size.width = 250;
-//            pen.frame = frame2;
             pen.center = CGPointMake(width-3*margin, height-70);
             
-            mainScrollView.contentSize = CGSizeMake(width, labelContent.frame.size.height+180);
+            mainScrollView.contentSize = CGSizeMake(width, labelContent.frame.size.height+190);
+            [timer invalidate];
+        } completion:nil];
+    }
+}
+
+- (void)writeText
+{
+    if (counter < arrayTransfer.count) {
+        labelContent.text = [labelContent.text stringByAppendingString:@" "];
+        [self setHightLightText:arrayTransfer[counter]];
+        counter++;
+        
+        if ([self lineCountForLabel:labelContent] > presentLine) {
+            presentLine++;
+            CGRect frame = labelContent.frame;
+            if (frame.size.height > height - 200) {
+                frame.origin.y = frame.origin.y - hWord;
+            }
+            frame.size.height = frame.size.height + hWord;
+//            NSLog(@"labelFrame: %f",frame.size.height);
+            labelContent.frame = frame;
+            
+            CGRect frame2 = pen.frame;
+            if (frame2.origin.y <= height - 200) {
+                frame2.origin.y = frame2.origin.y + hWord;
+                frame2.origin.x = 2*margin;
+            }
+            pen.frame = frame2;
+        }
+        else{
+            CGRect frame2 = pen.frame;
+            if (pen.frame.origin.x < penWidth) {
+                frame2.origin.x += 30;
+            }
+            else{
+                frame2.origin.x = 2*margin;
+            }
+            
+            pen.frame = frame2;
+        }
+    }
+    else{
+        [pen stopAnimating];
+        pen.image = [UIImage imageNamed:@"sig6.png"];
+        [UIView animateWithDuration:2 animations:^{
+            CGRect frame = labelContent.frame;
+            frame.origin.y = 0;
+            labelContent.frame = frame;
+    
+            pen.center = CGPointMake(width-3*margin, height-70);
+            
+            mainScrollView.contentSize = CGSizeMake(width, labelContent.frame.size.height+190);
             [timer invalidate];
         } completion:nil];
     }
@@ -273,6 +458,7 @@
 
 -(void)setHightLightText:(NSString*)strAppend
 {
+    NSLog(@"%@",strAppend);
     NSMutableAttributedString *attrStringContent = [labelContent.attributedText mutableCopy];
 
     NSMutableString *mutableString = [[NSMutableString alloc] init];
@@ -284,27 +470,35 @@
         }
     }
     
-    
-    if ([[mutableString uppercaseString] isEqual:[strKey uppercaseString]]) {
-        NSAttributedString *tailString = [[NSAttributedString alloc] initWithString:strAppend attributes:dicHightLight];
-        NSString *location = labelContent.text;
-        [arrayRange addObject:location];
-        [attrStringContent appendAttributedString:tailString];
+    if(button.enabled == YES){
+        if ([[mutableString uppercaseString] isEqual:[strKey uppercaseString]]) {
+            NSAttributedString *tailString = [[NSAttributedString alloc] initWithString:strAppend attributes:dicHightLight];
+            NSString *location = labelContent.text;
+            [arrayRange addObject:location];
+            [attrStringContent appendAttributedString:tailString];
+        }
+        else{
+            NSAttributedString *tailString = [[NSAttributedString alloc] initWithString:strAppend attributes:dic];
+            [attrStringContent appendAttributedString:tailString];
+        }
+        
+        if (isOne == YES && isAll == NO) {
+            [button setTitle:[NSString stringWithFormat:@"%lu", (unsigned long)arrayRange.count] forState:UIControlStateNormal];
+        }
+        
+        for (int i = 0; i < arrayRange.count; i++) {
+            NSString *loc = arrayRange[i];
+            NSUInteger location = loc.length;
+            NSRange range = NSMakeRange(location, strKey.length);
+            [attrStringContent addAttribute:NSForegroundColorAttributeName
+                                      value:[UIColor greenColor]
+                                      range:range];
+        }
     }
-    else{
+    else
+    {
         NSAttributedString *tailString = [[NSAttributedString alloc] initWithString:strAppend attributes:dic];
         [attrStringContent appendAttributedString:tailString];
-    }
-    
-    [button setTitle:[NSString stringWithFormat:@"%lu", (unsigned long)arrayRange.count] forState:UIControlStateNormal];
-    
-    for (int i = 0; i < arrayRange.count; i++) {
-        NSString *loc = arrayRange[i];
-        NSUInteger location = loc.length;
-        NSRange range = NSMakeRange(location, strKey.length);
-        [attrStringContent addAttribute:NSForegroundColorAttributeName
-                                  value:[UIColor greenColor]
-                                  range:range];
     }
     
     labelContent.attributedText = attrStringContent;
@@ -330,13 +524,7 @@
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     [timer invalidate];
-    [button setTitle:@"GO" forState:UIControlStateNormal];
-    labelContent.text = @"";
-    labelContent.attributedText = [[NSMutableAttributedString alloc] initWithString:@""];
-    CGRect frame = labelContent.frame;
-    frame.origin.y = 0;
-    frame.size.height = hWord;
-    labelContent.frame = frame;
+    
     [self initParameter];
     pen.image = nil;
     [self initPen];
