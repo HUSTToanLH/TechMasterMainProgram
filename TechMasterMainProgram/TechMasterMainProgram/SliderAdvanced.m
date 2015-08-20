@@ -22,7 +22,7 @@
 }
 
 - (IBAction)onClickScreen1:(id)sender {
-    [self pushScreen:@"Slider1"];
+    [self pushScreen:@"SliderTableView"];
 }
 
 - (IBAction)onClickScreen2:(id)sender {

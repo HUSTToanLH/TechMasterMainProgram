@@ -45,10 +45,10 @@
 
 -(void)initTitle
 {
-    pixOnValue = (_slider.frame.size.width - 8)/100;
+    pixOnValue = (_slider.frame.size.width)/100;
     title = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
     title.image = [UIImage imageNamed:@"title1.png"];
-    CGFloat newX = _slider.frame.origin.x + _slider.value*pixOnValue +6;
+    CGFloat newX = _slider.frame.origin.x + _slider.value*pixOnValue;
     CGFloat newY = _slider.frame.origin.y - title.frame.size.height/2 - 5;
     title.center = CGPointMake(newX, newY);
     [self.view addSubview:title];
@@ -64,7 +64,7 @@
 
 - (IBAction)changedSlider:(id)sender {
     NSLog(@"frame: %f", _slider.frame.size.width);
-    NSLog(@"self: %f", self.view.frame.size.width/2);
+//    NSLog(@"self: %f", self.view.frame.size.width/2);
     [self setTitleForSlider];
 }
 
@@ -75,6 +75,7 @@
     title.center = CGPointMake(newX, newY);
     
     label.text = [NSString stringWithFormat:@"%d", (int)_slider.value];
+    NSLog(@"center: %f", title.center.x);
 }
 
 
