@@ -22,14 +22,11 @@
 }
 
 - (IBAction)onClickScreen1:(id)sender {
-//    UIView *vScreen1 = [[[NSBundle mainBundle] loadNibNamed:@"SliderBasic" owner:self options:nil] lastObject];
-//    [_root addSubview:vScreen1];
-//    [self.view addSubview:_root];
-    [self pushScreen:@"SliderBasic"];
+    [self pushScreen:@"Slider1"];
 }
 
 - (IBAction)onClickScreen2:(id)sender {
-    
+    [self pushScreen:@"Slider2"];
 }
 
 - (IBAction)onClickScreen3:(id)sender {
