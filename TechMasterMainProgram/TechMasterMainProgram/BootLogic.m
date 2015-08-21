@@ -62,7 +62,11 @@
 //                                       @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"}
 //                                       ]};
     
-    mainScreen.menu = @[uiKit, array];
+    NSDictionary* xIB = @{SECTION: @"Interface Builder", MENU: @[
+                                  @{TITLE: @"AppDelegate", CLASS: @"SecondApp"}
+                                  ]};
+    
+    mainScreen.menu = @[uiKit, array, xIB];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from fss.com.vn";
     //--------- End of customization -----------
