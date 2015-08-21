@@ -22,15 +22,15 @@
 }
 
 - (IBAction)onClickScreen1:(id)sender {
-    [self pushScreen:@"SliderTableView"];
+    [self pushScreen:@"Slider1"];
 }
 
 - (IBAction)onClickScreen2:(id)sender {
-    [self pushScreen:@"Slider2"];
+    [self pushScreen:@"SliderTableView"];
 }
 
 - (IBAction)onClickScreen3:(id)sender {
-    
+    [self pushScreen:@"Slider2"];
 }
 
 -(void)pushScreen:(NSString *)xibName{

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SliderRangle.h"
 
-@interface SliderTableView : UITableViewController
+@interface SliderTableView : UIViewController
 
 @end

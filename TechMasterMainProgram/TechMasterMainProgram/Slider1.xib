@@ -15,9 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NDV-Uj-zDk">
-                    <rect key="frame" x="31" y="426" width="313" height="31"/>
-                </slider>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="14z-WO-aA0">
                     <rect key="frame" x="31" y="230" width="313" height="31"/>
                     <connections>
@@ -27,14 +24,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="NDV-Uj-zDk" secondAttribute="centerX" id="0nM-id-Xzr"/>
-                <constraint firstItem="NDV-Uj-zDk" firstAttribute="top" secondItem="14z-WO-aA0" secondAttribute="bottom" constant="166" id="4cP-ZU-bp0"/>
                 <constraint firstAttribute="trailing" secondItem="14z-WO-aA0" secondAttribute="trailing" constant="33" id="BaY-3C-iFh"/>
                 <constraint firstItem="14z-WO-aA0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="230" id="Ebf-po-7Gg"/>
                 <constraint firstAttribute="centerX" secondItem="14z-WO-aA0" secondAttribute="centerX" id="Wag-7a-QFj"/>
                 <constraint firstItem="14z-WO-aA0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="a7T-oj-QtN"/>
-                <constraint firstItem="NDV-Uj-zDk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="aMg-Cf-h9B"/>
-                <constraint firstAttribute="trailing" secondItem="NDV-Uj-zDk" secondAttribute="trailing" constant="33" id="vpz-4A-lHs"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <nil key="simulatedBottomBarMetrics"/>
