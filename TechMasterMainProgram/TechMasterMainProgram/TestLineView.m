@@ -27,6 +27,8 @@
     self.scrollView.minimumZoomScale = 0.5;
     _scrollView.panGestureRecognizer.enabled = NO;
     self.automaticallyAdjustsScrollViewInsets =NO;
+    
+    NSLog(@"%lu", sizeof(CGFloat));
 }
 
 -(void)initLineView

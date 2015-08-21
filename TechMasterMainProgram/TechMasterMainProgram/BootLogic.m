@@ -40,7 +40,7 @@
 //                                    @{TITLE: @"NSArrayFindNumber", CLASS: @"NSArrayFindNumber"},
 //                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"},
 //                                    @{TITLE: @"ArrayDictionary", CLASS: @"ArrayDictionary"},
-//                                    @{TITLE: @"TestLineView", CLASS: @"TestLineView"},
+                                    @{TITLE: @"TestLineView", CLASS: @"TestLineView"},
                                     @{TITLE: @"MutableArray", CLASS: @"MutableArrayCategory"}
                                     ]};
     

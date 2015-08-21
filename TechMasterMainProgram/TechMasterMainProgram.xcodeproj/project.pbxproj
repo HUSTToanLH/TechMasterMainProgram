@@ -148,7 +148,6 @@
 		03F6B5691B54B7CC00E9B3FE /* maxtrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5621B54B7CC00E9B3FE /* maxtrack.png */; };
 		03F6B56A1B54B7CC00E9B3FE /* mintrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5631B54B7CC00E9B3FE /* mintrack.png */; };
 		03F6B56B1B54B7CC00E9B3FE /* MuteSpeaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5641B54B7CC00E9B3FE /* MuteSpeaker.png */; };
-		03F6B56C1B54B7CC00E9B3FE /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5651B54B7CC00E9B3FE /* thumb.png */; };
 		03F6B56D1B54B7CC00E9B3FE /* track.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F6B5661B54B7CC00E9B3FE /* track.png */; };
 		BE2510071B6DB45700A9EFBD /* CoGaiHaLan.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2510051B6DB45700A9EFBD /* CoGaiHaLan.m */; };
 		BE2510081B6DB45700A9EFBD /* CoGaiHaLan.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2510061B6DB45700A9EFBD /* CoGaiHaLan.xib */; };
@@ -436,7 +435,6 @@
 		03F6B5621B54B7CC00E9B3FE /* maxtrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maxtrack.png; sourceTree = "<group>"; };
 		03F6B5631B54B7CC00E9B3FE /* mintrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mintrack.png; sourceTree = "<group>"; };
 		03F6B5641B54B7CC00E9B3FE /* MuteSpeaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MuteSpeaker.png; sourceTree = "<group>"; };
-		03F6B5651B54B7CC00E9B3FE /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
 		03F6B5661B54B7CC00E9B3FE /* track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track.png; sourceTree = "<group>"; };
 		BE2510041B6DB45700A9EFBD /* CoGaiHaLan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoGaiHaLan.h; sourceTree = "<group>"; };
 		BE2510051B6DB45700A9EFBD /* CoGaiHaLan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoGaiHaLan.m; sourceTree = "<group>"; };
@@ -878,7 +876,6 @@
 				03F6B5621B54B7CC00E9B3FE /* maxtrack.png */,
 				03F6B5631B54B7CC00E9B3FE /* mintrack.png */,
 				03F6B5641B54B7CC00E9B3FE /* MuteSpeaker.png */,
-				03F6B5651B54B7CC00E9B3FE /* thumb.png */,
 				03F6B5661B54B7CC00E9B3FE /* track.png */,
 			);
 			name = Slider;
@@ -1434,7 +1431,6 @@
 				FABFFDD51B750D04004483AB /* starYellow.png in Resources */,
 				03B364641B60F815001C7264 /* 77ef19d8e9.gif.017.gif in Resources */,
 				0343C3CD1B73474000E0BBD1 /* RollBall.xib in Resources */,
-				03F6B56C1B54B7CC00E9B3FE /* thumb.png in Resources */,
 				03B363FC1B609BA2001C7264 /* campFire02.gif in Resources */,
 				BE25106E1B6DEF5100A9EFBD /* frame_32_delay-0.25s.gif in Resources */,
 				BE25106A1B6DEF5100A9EFBD /* frame_28_delay-0.25s.gif in Resources */,
