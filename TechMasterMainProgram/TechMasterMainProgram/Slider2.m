@@ -16,26 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initBackground];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self initSubBackground];
+    [self initThumb];
+    [self initBackground];
 }
 
 -(void)initBackground
 {
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"buttonBackground"] drawInRect:self.view.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    UIImageView *subBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"circularSliderBound.png"]];
+    subBackground.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+    [self.view addSubview:subBackground];
 }
 
 -(void)initSubBackground
 {
-    UIImageView *subBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"buttonBack2.png"]];
-//    subBackground.frame = CGRectMake(0, 0, subBackground.frame.size.width, subBackground.frame.size.height);
+    UIImageView *subBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"circularSliderTrackFull.png"]];
     subBackground.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
     [self.view addSubview:subBackground];
+}
+
+-(void)initThumb
+{
+
 }
 
 @end
