@@ -7,6 +7,7 @@
 //
 
 #import "SliderTableView.h"
+#import "UIColor+Extend.h"
 
 @interface SliderTableView ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [[UIColor alloc] initColorHex:@"#F6CED8" alpha:1];
     [self initViewContainer];
 }
 
@@ -35,8 +36,8 @@
     slider = [slider initWithFrame:viewContainer.bounds];
     [viewContainer addSubview:slider];
     
-    NSLog(@"container x: %f,container y: %f", viewContainer.frame.origin.x, viewContainer.frame.origin.y);
-    NSLog(@"container w: %f,container h: %f", viewContainer.frame.size.width, viewContainer.frame.size.height);
+//    NSLog(@"container x: %f,container y: %f", viewContainer.frame.origin.x, viewContainer.frame.origin.y);
+//    NSLog(@"container w: %f,container h: %f", viewContainer.frame.size.width, viewContainer.frame.size.height);
 }
 
 @end

@@ -14,12 +14,5 @@
 @property(nonatomic, assign) float minimumRange;
 @property(nonatomic, assign) float selectedMinimumValue;
 @property(nonatomic, assign) float selectedMaximumValue;
-//{
-//    float minimumValue;
-//    float maximumValue;
-//    float minimumRange;
-//    float selectedMinimumValue;
-//    float selectedMaximumValue;
-//}
 
 @end

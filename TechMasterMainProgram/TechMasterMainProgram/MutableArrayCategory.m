@@ -533,4 +533,9 @@
     return YES;
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self stopTimer];
+}
+
 @end

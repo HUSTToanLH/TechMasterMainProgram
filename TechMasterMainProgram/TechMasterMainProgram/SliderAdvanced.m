@@ -30,7 +30,7 @@
 }
 
 - (IBAction)onClickScreen3:(id)sender {
-    [self pushScreen:@"Slider2"];
+    [self pushScreen:@"CircularSliderView"];
 }
 
 -(void)pushScreen:(NSString *)xibName{
