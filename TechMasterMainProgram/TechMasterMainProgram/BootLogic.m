@@ -31,7 +31,8 @@
                                     @{TITLE: @"SkewImage", CLASS: @"SkewImage"},
 //                                    @{TITLE: @"RunningLED", CLASS: @"RunningLED"},
                                     @{TITLE: @"SliderAdvanced", CLASS: @"SliderAdvanced"},
-                                    @{TITLE: @"Switch", CLASS: @"Switch"}
+                                    @{TITLE: @"SwitchView", CLASS: @"SwitchView"},
+                                    @{TITLE: @"SwitchResuse", CLASS: @"SwitchResuse"}
                                     ]};
     
     NSDictionary* array = @{SECTION: @"Array", MENU:@[
