@@ -45,8 +45,8 @@
 {
     button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width/2, 40)];
     button.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
-    [button setTitle:@"Open First App" forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor greenColor];
+    [button setTitle:@"Open Tarzan App" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor darkGrayColor];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(onClickButton) forControlEvents:UIControlEventTouchUpInside];
@@ -54,7 +54,7 @@
 
 -(void)onClickButton
 {
-    NSString *customURL = @"TCBSApp://";
+    NSString *customURL = @"Tarzan://";
     
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:customURL]])
     {

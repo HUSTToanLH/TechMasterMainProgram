@@ -32,7 +32,7 @@
 //                                    @{TITLE: @"RunningLED", CLASS: @"RunningLED"},
                                     @{TITLE: @"SliderAdvanced", CLASS: @"SliderAdvanced"},
                                     @{TITLE: @"SwitchView", CLASS: @"SwitchView"},
-                                    @{TITLE: @"SwitchResuse", CLASS: @"SwitchResuse"}
+                                    @{TITLE: @"SwitchReuse", CLASS: @"SwitchResuse"}
                                     ]};
     
     NSDictionary* array = @{SECTION: @"Array", MENU:@[
