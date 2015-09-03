@@ -283,6 +283,11 @@
 		FAAC37931B76F5640000B694 /* sea2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378F1B76F5640000B694 /* sea2.png */; };
 		FAAC37941B76F5640000B694 /* sea3.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC37901B76F5640000B694 /* sea3.png */; };
 		FAAC37951B76F5640000B694 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC37911B76F5640000B694 /* ship.png */; };
+		FAADBC051B988BFB00ADEC2A /* ScrollViewZoomNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADBC041B988BFB00ADEC2A /* ScrollViewZoomNavi.m */; };
+		FAADBC081B988E0200ADEC2A /* girl_scarf.png in Resources */ = {isa = PBXBuildFile; fileRef = FAADBC071B988E0200ADEC2A /* girl_scarf.png */; };
+		FAADBC0B1B989CE500ADEC2A /* ScrollViewZoomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADBC0A1B989CE500ADEC2A /* ScrollViewZoomToolbar.m */; };
+		FAADBC0D1B98A5FE00ADEC2A /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = FAADBC0C1B98A5FE00ADEC2A /* banner.png */; };
+		FAADBC101B98A62700ADEC2A /* ScrollViewContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FAADBC0F1B98A62700ADEC2A /* ScrollViewContentSize.m */; };
 		FAB299ED1B8B6F490082D76A /* lightoff.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB299EC1B8B6F490082D76A /* lightoff.png */; };
 		FAB299EF1B8B6FA60082D76A /* lighton.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB299EE1B8B6FA60082D76A /* lighton.png */; };
 		FAB299F41B8B6FB90082D76A /* leftButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB299F01B8B6FB90082D76A /* leftButtonOff.png */; };
@@ -303,6 +308,7 @@
 		FAC8F1721B8049DC0087994D /* espn.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8F1711B8049DC0087994D /* espn.rtf */; };
 		FACB7E1B1B76E4F00058073B /* Ship.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB7E191B76E4F00058073B /* Ship.m */; };
 		FACB7E1C1B76E4F00058073B /* Ship.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACB7E1A1B76E4F00058073B /* Ship.xib */; };
+		FADE94E41B933F9D00419409 /* FlappyBirdClone.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE94E31B933F9D00419409 /* FlappyBirdClone.m */; };
 		FAF9E87A1B7B996300018848 /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9E8791B7B996300018848 /* HexColor.m */; };
 /* End PBXBuildFile section */
 
@@ -627,6 +633,14 @@
 		FAAC378F1B76F5640000B694 /* sea2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea2.png; sourceTree = "<group>"; };
 		FAAC37901B76F5640000B694 /* sea3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea3.png; sourceTree = "<group>"; };
 		FAAC37911B76F5640000B694 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		FAADBC031B988BFB00ADEC2A /* ScrollViewZoomNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewZoomNavi.h; sourceTree = "<group>"; };
+		FAADBC041B988BFB00ADEC2A /* ScrollViewZoomNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewZoomNavi.m; sourceTree = "<group>"; };
+		FAADBC071B988E0200ADEC2A /* girl_scarf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl_scarf.png; sourceTree = "<group>"; };
+		FAADBC091B989CE500ADEC2A /* ScrollViewZoomToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewZoomToolbar.h; sourceTree = "<group>"; };
+		FAADBC0A1B989CE500ADEC2A /* ScrollViewZoomToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewZoomToolbar.m; sourceTree = "<group>"; };
+		FAADBC0C1B98A5FE00ADEC2A /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		FAADBC0E1B98A62700ADEC2A /* ScrollViewContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewContentSize.h; sourceTree = "<group>"; };
+		FAADBC0F1B98A62700ADEC2A /* ScrollViewContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewContentSize.m; sourceTree = "<group>"; };
 		FAB299EC1B8B6F490082D76A /* lightoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightoff.png; sourceTree = "<group>"; };
 		FAB299EE1B8B6FA60082D76A /* lighton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighton.png; sourceTree = "<group>"; };
 		FAB299F01B8B6FB90082D76A /* leftButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftButtonOff.png; sourceTree = "<group>"; };
@@ -651,6 +665,8 @@
 		FACB7E181B76E4F00058073B /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship.h; sourceTree = "<group>"; };
 		FACB7E191B76E4F00058073B /* Ship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ship.m; sourceTree = "<group>"; };
 		FACB7E1A1B76E4F00058073B /* Ship.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ship.xib; sourceTree = "<group>"; };
+		FADE94E21B933F9D00419409 /* FlappyBirdClone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlappyBirdClone.h; sourceTree = "<group>"; };
+		FADE94E31B933F9D00419409 /* FlappyBirdClone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlappyBirdClone.m; sourceTree = "<group>"; };
 		FAF9E8781B7B996200018848 /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
 		FAF9E8791B7B996300018848 /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -991,7 +1007,9 @@
 			children = (
 				03F6B5471B54A5F500E9B3FE /* Core */,
 				BE2510031B6DB40400A9EFBD /* CodeCamp1 */,
+				FADE94E11B933F7300419409 /* CodeCamp2 */,
 				03E09E121B82D51700D46377 /* InterfaceBuilder */,
+				FAADBC021B988B3B00ADEC2A /* UIScrollView */,
 				03B363E51B609A29001C7264 /* UIView */,
 				03C9EDE51B5895BF007C0F9D /* Array */,
 				FABFFDD61B751673004483AB /* UIKit */,
@@ -1212,6 +1230,29 @@
 			name = FlyingBird;
 			sourceTree = "<group>";
 		};
+		FAADBC021B988B3B00ADEC2A /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FAADBC061B988C8B00ADEC2A /* ScrollViewZoomNavi */,
+			);
+			name = UIScrollView;
+			sourceTree = "<group>";
+		};
+		FAADBC061B988C8B00ADEC2A /* ScrollViewZoomNavi */ = {
+			isa = PBXGroup;
+			children = (
+				FAADBC0C1B98A5FE00ADEC2A /* banner.png */,
+				FAADBC071B988E0200ADEC2A /* girl_scarf.png */,
+				FAADBC031B988BFB00ADEC2A /* ScrollViewZoomNavi.h */,
+				FAADBC041B988BFB00ADEC2A /* ScrollViewZoomNavi.m */,
+				FAADBC091B989CE500ADEC2A /* ScrollViewZoomToolbar.h */,
+				FAADBC0A1B989CE500ADEC2A /* ScrollViewZoomToolbar.m */,
+				FAADBC0E1B98A62700ADEC2A /* ScrollViewContentSize.h */,
+				FAADBC0F1B98A62700ADEC2A /* ScrollViewContentSize.m */,
+			);
+			name = ScrollViewZoomNavi;
+			sourceTree = "<group>";
+		};
 		FABFFDCD1B750CE1004483AB /* StarField */ = {
 			isa = PBXGroup;
 			children = (
@@ -1305,6 +1346,15 @@
 				FA915A811B899B730017F336 /* CircularSilderController.m */,
 			);
 			name = CircularSlider;
+			sourceTree = "<group>";
+		};
+		FADE94E11B933F7300419409 /* CodeCamp2 */ = {
+			isa = PBXGroup;
+			children = (
+				FADE94E21B933F9D00419409 /* FlappyBirdClone.h */,
+				FADE94E31B933F9D00419409 /* FlappyBirdClone.m */,
+			);
+			name = CodeCamp2;
 			sourceTree = "<group>";
 		};
 		FAF9E8711B7B92F000018848 /* image */ = {
@@ -1457,6 +1507,7 @@
 				FA915AA01B89BF710017F336 /* thumbSilver10.png in Resources */,
 				FA915AA21B89C4090017F336 /* Korean.mp3 in Resources */,
 				BE2510681B6DEF5100A9EFBD /* frame_26_delay-0.25s.gif in Resources */,
+				FAADBC081B988E0200ADEC2A /* girl_scarf.png in Resources */,
 				BE2510561B6DEF5100A9EFBD /* frame_8_delay-0.25s.gif in Resources */,
 				FAAC378D1B76F5560000B694 /* SeeYouAgain.mp3 in Resources */,
 				03095DE91B85B2BB004EB2D1 /* handle@2x.png in Resources */,
@@ -1670,6 +1721,7 @@
 				031147BC1B872F3900BC0389 /* button copy.jpg in Resources */,
 				03B364731B60F815001C7264 /* 77ef19d8e9.gif.032.gif in Resources */,
 				03095DC21B85868B004EB2D1 /* title1.png in Resources */,
+				FAADBC0D1B98A5FE00ADEC2A /* banner.png in Resources */,
 				BE25105E1B6DEF5100A9EFBD /* frame_16_delay-0.25s.gif in Resources */,
 				BE2510191B6DCB7F00A9EFBD /* frame_7_delay-0.1s.gif in Resources */,
 				03B364211B60E9F4001C7264 /* spiderman.png in Resources */,
@@ -1712,6 +1764,7 @@
 			files = (
 				03E09E151B82D5D600D46377 /* SecondApp.m in Sources */,
 				03B3640E1B60A3D7001C7264 /* NestedSquare.m in Sources */,
+				FADE94E41B933F9D00419409 /* FlappyBirdClone.m in Sources */,
 				039729341B783D220076F2C2 /* ArrayDictionary.m in Sources */,
 				03B364111B60C6CE001C7264 /* FlyingBird.m in Sources */,
 				03EEDD311B788EF000011E35 /* AutoTableCell.m in Sources */,
@@ -1721,6 +1774,7 @@
 				03F6B5531B54A61A00E9B3FE /* MainScreen.m in Sources */,
 				03B363CC1B5F8BA9001C7264 /* SkewImage.m in Sources */,
 				03C08A841B576868005BDCC8 /* RunningLED.m in Sources */,
+				FAADBC051B988BFB00ADEC2A /* ScrollViewZoomNavi.m in Sources */,
 				BE2510071B6DB45700A9EFBD /* CoGaiHaLan.m in Sources */,
 				036D984F1B5E4C8700E05377 /* SliderAdvanced.m in Sources */,
 				FA915A821B899B730017F336 /* CircularSilderController.m in Sources */,
@@ -1728,6 +1782,7 @@
 				036D984A1B5CCF8D00E05377 /* DemoSelector.m in Sources */,
 				03E4B4161B6F12D100FAA769 /* DemoPlanet.m in Sources */,
 				03095DEC1B85B748004EB2D1 /* SliderRangle.m in Sources */,
+				FAADBC0B1B989CE500ADEC2A /* ScrollViewZoomToolbar.m in Sources */,
 				FAB29A081B8B84CB0082D76A /* SwitchResuse.m in Sources */,
 				03F6B5521B54A61A00E9B3FE /* ConsoleScreen.m in Sources */,
 				FAF9E87A1B7B996300018848 /* HexColor.m in Sources */,
@@ -1753,6 +1808,7 @@
 				03AD42FC1B7AF46B003C878F /* ColorView.m in Sources */,
 				03F6B5241B54A53F00E9B3FE /* main.m in Sources */,
 				03C9EDF41B59E3F0007C0F9D /* NSArrayTruyVan_2.m in Sources */,
+				FAADBC101B98A62700ADEC2A /* ScrollViewContentSize.m in Sources */,
 				03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */,
 				03C9EDE81B589673007C0F9D /* NSArrayTruyVan_1.m in Sources */,
 				0343C3D31B73689500E0BBD1 /* DropBall.m in Sources */,

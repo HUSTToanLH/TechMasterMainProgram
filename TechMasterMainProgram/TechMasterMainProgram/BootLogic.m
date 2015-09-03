@@ -45,6 +45,12 @@
                                     @{TITLE: @"MutableArray", CLASS: @"MutableArrayCategory"}
                                     ]};
     
+    NSDictionary* scrollView = @{SECTION: @"UIScrollView", MENU:@[
+                                    @{TITLE: @"ScrollViewZoomNavi", CLASS: @"ScrollViewZoomNavi"},
+                                    @{TITLE: @"ScrollViewZoomToolbar", CLASS: @"ScrollViewZoomToolbar"},
+                                    @{TITLE: @"ScrollViewContentSize", CLASS: @"ScrollViewContentSize"}
+                                    ]};
+    
 //    NSDictionary* uiView = @{SECTION: @"UIView", MENU: @[
 //                                    @{TITLE: @"ChessView", CLASS: @"ChessView"},
 //                                    @{TITLE: @"BasicView", CLASS: @"BasicView"},
@@ -59,15 +65,16 @@
 //                                     @{TITLE: @"HexColor", CLASS: @"HexColor"}
 //                                     ]};
     
-//    NSDictionary* codeCamp = @{SECTION: @"CodeCamp", MENU: @[
-//                                       @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"}
-//                                       ]};
+    NSDictionary* codeCamp = @{SECTION: @"CodeCamp", MENU: @[
+//                                       @{TITLE: @"CoGaiHaLan", CLASS: @"CoGaiHaLan"},
+                                       @{TITLE: @"FlappyBird", CLASS: @"FlappyBirdClone"}
+                                       ]};
     
     NSDictionary* xIB = @{SECTION: @"Interface Builder", MENU: @[
                                   @{TITLE: @"AppDelegate", CLASS: @"SecondApp"}
                                   ]};
     
-    mainScreen.menu = @[uiKit, array, xIB];
+    mainScreen.menu = @[uiKit, array, xIB, scrollView, codeCamp];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from fss.com.vn";
     //--------- End of customization -----------
