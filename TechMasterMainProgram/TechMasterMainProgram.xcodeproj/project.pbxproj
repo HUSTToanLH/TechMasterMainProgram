@@ -253,6 +253,10 @@
 		FA42BE611B879DBC00EFDD93 /* circularSliderTrackFull.png in Resources */ = {isa = PBXBuildFile; fileRef = FA42BE5F1B879DBC00EFDD93 /* circularSliderTrackFull.png */; };
 		FA42BE631B87A15000EFDD93 /* circleSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = FA42BE621B87A15000EFDD93 /* circleSliderThumb.png */; };
 		FA42BE651B87A81900EFDD93 /* circularSliderTrackEmptyl.png in Resources */ = {isa = PBXBuildFile; fileRef = FA42BE641B87A81900EFDD93 /* circularSliderTrackEmptyl.png */; };
+		FA5383531BA07CF900C37700 /* TapPanPinch.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5383511BA07CF900C37700 /* TapPanPinch.m */; };
+		FA5383561BA081A100C37700 /* americanfootball.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5383551BA081A100C37700 /* americanfootball.png */; };
+		FA5B65221BA31F1000AE299A /* PinchAndRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B65211BA31F1000AE299A /* PinchAndRotate.m */; };
+		FA5B65241BA31F8A00AE299A /* pretty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA5B65231BA31F8A00AE299A /* pretty.jpg */; };
 		FA72F5C51B7F94A300BDB417 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5C41B7F94A300BDB417 /* paper.png */; };
 		FA72F5C71B7F9C1500BDB417 /* bottomPaper.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5C61B7F9C1500BDB417 /* bottomPaper.png */; };
 		FA72F5CD1B7FA23C00BDB417 /* bottomPaper3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5CC1B7FA23C00BDB417 /* bottomPaper3.png */; };
@@ -598,6 +602,12 @@
 		FA42BE5F1B879DBC00EFDD93 /* circularSliderTrackFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circularSliderTrackFull.png; sourceTree = "<group>"; };
 		FA42BE621B87A15000EFDD93 /* circleSliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleSliderThumb.png; sourceTree = "<group>"; };
 		FA42BE641B87A81900EFDD93 /* circularSliderTrackEmptyl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circularSliderTrackEmptyl.png; sourceTree = "<group>"; };
+		FA5383501BA07CF900C37700 /* TapPanPinch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapPanPinch.h; sourceTree = "<group>"; };
+		FA5383511BA07CF900C37700 /* TapPanPinch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapPanPinch.m; sourceTree = "<group>"; };
+		FA5383551BA081A100C37700 /* americanfootball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = americanfootball.png; sourceTree = "<group>"; };
+		FA5B65201BA31F1000AE299A /* PinchAndRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchAndRotate.h; sourceTree = "<group>"; };
+		FA5B65211BA31F1000AE299A /* PinchAndRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchAndRotate.m; sourceTree = "<group>"; };
+		FA5B65231BA31F8A00AE299A /* pretty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pretty.jpg; sourceTree = "<group>"; };
 		FA72F5C41B7F94A300BDB417 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
 		FA72F5C61B7F9C1500BDB417 /* bottomPaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomPaper.png; sourceTree = "<group>"; };
 		FA72F5CC1B7FA23C00BDB417 /* bottomPaper3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomPaper3.png; sourceTree = "<group>"; };
@@ -1009,6 +1019,7 @@
 				BE2510031B6DB40400A9EFBD /* CodeCamp1 */,
 				FADE94E11B933F7300419409 /* CodeCamp2 */,
 				03E09E121B82D51700D46377 /* InterfaceBuilder */,
+				FA53834E1BA07C9000C37700 /* MultiTouch */,
 				FAADBC021B988B3B00ADEC2A /* UIScrollView */,
 				03B363E51B609A29001C7264 /* UIView */,
 				03C9EDE51B5895BF007C0F9D /* Array */,
@@ -1167,6 +1178,35 @@
 				03E4B4061B6F11BE00FAA769 /* hoami.mp3 */,
 			);
 			name = mp3;
+			sourceTree = "<group>";
+		};
+		FA53834E1BA07C9000C37700 /* MultiTouch */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B651F1BA31EEC00AE299A /* PinchAndRotate */,
+				FA53834F1BA07CBC00C37700 /* TapPanPinch */,
+			);
+			name = MultiTouch;
+			sourceTree = "<group>";
+		};
+		FA53834F1BA07CBC00C37700 /* TapPanPinch */ = {
+			isa = PBXGroup;
+			children = (
+				FA5383551BA081A100C37700 /* americanfootball.png */,
+				FA5383501BA07CF900C37700 /* TapPanPinch.h */,
+				FA5383511BA07CF900C37700 /* TapPanPinch.m */,
+			);
+			name = TapPanPinch;
+			sourceTree = "<group>";
+		};
+		FA5B651F1BA31EEC00AE299A /* PinchAndRotate */ = {
+			isa = PBXGroup;
+			children = (
+				FA5B65231BA31F8A00AE299A /* pretty.jpg */,
+				FA5B65201BA31F1000AE299A /* PinchAndRotate.h */,
+				FA5B65211BA31F1000AE299A /* PinchAndRotate.m */,
+			);
+			name = PinchAndRotate;
 			sourceTree = "<group>";
 		};
 		FA72F5D01B7FE08900BDB417 /* image */ = {
@@ -1595,6 +1635,7 @@
 				FAB299ED1B8B6F490082D76A /* lightoff.png in Resources */,
 				03B364661B60F815001C7264 /* 77ef19d8e9.gif.019.gif in Resources */,
 				03F6B5681B54B7CC00E9B3FE /* MaxSpeaker.png in Resources */,
+				FA5B65241BA31F8A00AE299A /* pretty.jpg in Resources */,
 				BE2510501B6DEF5100A9EFBD /* frame_2_delay-0.25s.gif in Resources */,
 				BE2510211B6DE9D200A9EFBD /* dongco.png in Resources */,
 				BE2510621B6DEF5100A9EFBD /* frame_20_delay-0.25s.gif in Resources */,
@@ -1627,6 +1668,7 @@
 				03B3647C1B60F815001C7264 /* 77ef19d8e9.gif.041.gif in Resources */,
 				0343C3D41B73689500E0BBD1 /* DropBall.xib in Resources */,
 				03484B201B69BC7A0073BD13 /* lightBall3.png in Resources */,
+				FA5383561BA081A100C37700 /* americanfootball.png in Resources */,
 				BE2510691B6DEF5100A9EFBD /* frame_27_delay-0.25s.gif in Resources */,
 				036D984B1B5CCF8D00E05377 /* DemoSelector.xib in Resources */,
 				FA72F5DC1B7FE0AE00BDB417 /* sigq2.png in Resources */,
@@ -1790,6 +1832,7 @@
 				03F6B5501B54A61A00E9B3FE /* AppDelegate.m in Sources */,
 				0343C3CC1B73474000E0BBD1 /* RollBall.m in Sources */,
 				03095DEF1B85B7A7004EB2D1 /* SliderTableView.m in Sources */,
+				FA5383531BA07CF900C37700 /* TapPanPinch.m in Sources */,
 				FA915A961B89B2800017F336 /* SliderBasic.m in Sources */,
 				03B363E31B60892E001C7264 /* BasicView.m in Sources */,
 				03C08A6F1B563F33005BDCC8 /* Slider.m in Sources */,
@@ -1802,6 +1845,7 @@
 				FACB7E1B1B76E4F00058073B /* Ship.m in Sources */,
 				BE4B65B91B6A4AC100B910EF /* NSArrayFindNumber.m in Sources */,
 				03588A331B74A61D00291837 /* StartField.m in Sources */,
+				FA5B65221BA31F1000AE299A /* PinchAndRotate.m in Sources */,
 				037C3E2D1B7EDC2200F33AD6 /* MutableArrayCategory.m in Sources */,
 				03EEDD361B78977500011E35 /* TestLineView.m in Sources */,
 				FAB299FA1B8B6FEC0082D76A /* SwitchView.m in Sources */,

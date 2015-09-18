@@ -51,6 +51,11 @@
                                     @{TITLE: @"ScrollViewContentSize", CLASS: @"ScrollViewContentSize"}
                                     ]};
     
+    NSDictionary* multiTouch = @{SECTION: @"MultiTouch", MENU:@[
+                                         @{TITLE: @"TapPanPinch", CLASS: @"TapPanPinch"},
+                                         @{TITLE: @"PinchAndRotate", CLASS: @"PinchAndRotate"}
+                                         ]};
+    
 //    NSDictionary* uiView = @{SECTION: @"UIView", MENU: @[
 //                                    @{TITLE: @"ChessView", CLASS: @"ChessView"},
 //                                    @{TITLE: @"BasicView", CLASS: @"BasicView"},
@@ -74,7 +79,7 @@
                                   @{TITLE: @"AppDelegate", CLASS: @"SecondApp"}
                                   ]};
     
-    mainScreen.menu = @[uiKit, array, xIB, scrollView, codeCamp];
+    mainScreen.menu = @[uiKit, array, xIB, multiTouch, scrollView, codeCamp];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from fss.com.vn";
     //--------- End of customization -----------
