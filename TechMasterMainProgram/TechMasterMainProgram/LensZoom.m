@@ -41,7 +41,7 @@
     
     
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onTap:)];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onPan:)];
     pan.delegate = self;
     [self.imageView addGestureRecognizer:pan];
     self.imageView.userInteractionEnabled = YES;
@@ -65,13 +65,13 @@
 //                  endAngle:M_PI*2.0
 //                 clockwise:YES];
     
-    path  = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.circleCenter.x + self.circleRadius, self.circleCenter.y + self.circleRadius, 100 + self.circleRadius, 60 + self.circleRadius)];
+    path  = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(self.circleCenter.x, self.circleCenter.y, 100 + self.circleRadius, 60 + self.circleRadius)];
     
     self.maskLayer.path = [path CGPath];
     self.circleLayer.path = [path CGPath];
 }
 
--(void)onTap:(UIPanGestureRecognizer*)ges{
+-(void)onPan:(UIPanGestureRecognizer*)ges{
     NSLog(@"pan");
     static CGPoint oldPoint;
     CGPoint translation = [ges translationInView:ges.view];
