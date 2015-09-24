@@ -31,7 +31,6 @@
     
     CAShapeLayer *circleLayer = [CAShapeLayer layer];
     circleLayer.lineWidth = 2.0;
-    [circleLayer setPath:[[UIBezierPath bezierPathWithOvalInRect:CGRectMake(20, 20, 100, 100)] CGPath]];
     circleLayer.fillColor = [[UIColor clearColor] CGColor];
     circleLayer.strokeColor = [[UIColor blackColor] CGColor];
     [self.imageView.layer addSublayer:circleLayer];
