@@ -53,7 +53,12 @@
     
     NSDictionary* multiTouch = @{SECTION: @"MultiTouch", MENU:@[
                                          @{TITLE: @"TapPanPinch", CLASS: @"TapPanPinch"},
-                                         @{TITLE: @"PinchAndRotate", CLASS: @"PinchAndRotate"}
+                                         @{TITLE: @"PinchAndRotate", CLASS: @"PinchAndRotate"},
+                                         @{TITLE: @"TestWrapViewVC", CLASS: @"TestWrapViewVC"}
+                                         ]};
+    
+    NSDictionary* socialNetwork = @{SECTION: @"SocialNetwork", MENU:@[
+                                         @{TITLE: @"UIWebview", CLASS: @"UIWebview"}
                                          ]};
     
 //    NSDictionary* uiView = @{SECTION: @"UIView", MENU: @[
@@ -79,7 +84,7 @@
                                   @{TITLE: @"AppDelegate", CLASS: @"SecondApp"}
                                   ]};
     
-    mainScreen.menu = @[uiKit, array, xIB, multiTouch, scrollView, codeCamp];
+    mainScreen.menu = @[socialNetwork, uiKit, array, xIB, multiTouch, scrollView, codeCamp];
     mainScreen.title = @"FSS_ToanLH";
     mainScreen.about = @"This is code from fss.com.vn";
     //--------- End of customization -----------
