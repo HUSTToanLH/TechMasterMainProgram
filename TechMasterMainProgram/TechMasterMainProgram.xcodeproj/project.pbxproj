@@ -270,8 +270,6 @@
 		FA72F5E01B7FE0AE00BDB417 /* sig6.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5D81B7FE0AE00BDB417 /* sig6.png */; };
 		FA72F5E11B7FE0AE00BDB417 /* sig7.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5D91B7FE0AE00BDB417 /* sig7.png */; };
 		FA72F5E21B7FE0AE00BDB417 /* sig8.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72F5DA1B7FE0AE00BDB417 /* sig8.png */; };
-		FA8154701BC429B200E99BFF /* TestWrapViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA81546F1BC429B200E99BFF /* TestWrapViewVC.m */; settings = {ASSET_TAGS = (); }; };
-		FA8154731BC429C500E99BFF /* TextWrapView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8154721BC429C500E99BFF /* TextWrapView.m */; settings = {ASSET_TAGS = (); }; };
 		FA915A821B899B730017F336 /* CircularSilderController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA915A811B899B730017F336 /* CircularSilderController.m */; };
 		FA915A851B899C3C0017F336 /* CircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA915A841B899C3C0017F336 /* CircularSlider.m */; };
 		FA915A881B899D140017F336 /* CircularSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA915A871B899D140017F336 /* CircularSliderView.m */; };
@@ -284,7 +282,6 @@
 		FA915A9E1B89BA710017F336 /* trackWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = FA915A9D1B89BA710017F336 /* trackWhite.png */; };
 		FA915AA01B89BF710017F336 /* thumbSilver10.png in Resources */ = {isa = PBXBuildFile; fileRef = FA915A9F1B89BF710017F336 /* thumbSilver10.png */; };
 		FA915AA21B89C4090017F336 /* Korean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA915AA11B89C4090017F336 /* Korean.mp3 */; };
-		FA9BC7351BC438CC00A98A6A /* TestWrapViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9BC7341BC438CC00A98A6A /* TestWrapViewVC.xib */; settings = {ASSET_TAGS = (); }; };
 		FAAC378D1B76F5560000B694 /* SeeYouAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378C1B76F5560000B694 /* SeeYouAgain.mp3 */; };
 		FAAC37921B76F5640000B694 /* sea1.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378E1B76F5640000B694 /* sea1.png */; };
 		FAAC37931B76F5640000B694 /* sea2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378F1B76F5640000B694 /* sea2.png */; };
@@ -642,10 +639,6 @@
 		FA72F5D81B7FE0AE00BDB417 /* sig6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sig6.png; sourceTree = "<group>"; };
 		FA72F5D91B7FE0AE00BDB417 /* sig7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sig7.png; sourceTree = "<group>"; };
 		FA72F5DA1B7FE0AE00BDB417 /* sig8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sig8.png; sourceTree = "<group>"; };
-		FA81546E1BC429B200E99BFF /* TestWrapViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWrapViewVC.h; sourceTree = "<group>"; };
-		FA81546F1BC429B200E99BFF /* TestWrapViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWrapViewVC.m; sourceTree = "<group>"; };
-		FA8154711BC429C500E99BFF /* TextWrapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextWrapView.h; sourceTree = "<group>"; };
-		FA8154721BC429C500E99BFF /* TextWrapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextWrapView.m; sourceTree = "<group>"; };
 		FA915A801B899B730017F336 /* CircularSilderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularSilderController.h; sourceTree = "<group>"; };
 		FA915A811B899B730017F336 /* CircularSilderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularSilderController.m; sourceTree = "<group>"; };
 		FA915A831B899C3C0017F336 /* CircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularSlider.h; sourceTree = "<group>"; };
@@ -663,7 +656,6 @@
 		FA915A9D1B89BA710017F336 /* trackWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackWhite.png; sourceTree = "<group>"; };
 		FA915A9F1B89BF710017F336 /* thumbSilver10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbSilver10.png; sourceTree = "<group>"; };
 		FA915AA11B89C4090017F336 /* Korean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Korean.mp3; sourceTree = "<group>"; };
-		FA9BC7341BC438CC00A98A6A /* TestWrapViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestWrapViewVC.xib; sourceTree = "<group>"; };
 		FAAC378C1B76F5560000B694 /* SeeYouAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SeeYouAgain.mp3; sourceTree = "<group>"; };
 		FAAC378E1B76F5640000B694 /* sea1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea1.png; sourceTree = "<group>"; };
 		FAAC378F1B76F5640000B694 /* sea2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea2.png; sourceTree = "<group>"; };
@@ -1251,7 +1243,6 @@
 		FA53834E1BA07C9000C37700 /* MultiTouch */ = {
 			isa = PBXGroup;
 			children = (
-				FA81546D1BC4299100E99BFF /* TestWrap */,
 				FA5B651F1BA31EEC00AE299A /* PinchAndRotate */,
 				FA53834F1BA07CBC00C37700 /* TapPanPinch */,
 			);
@@ -1295,18 +1286,6 @@
 				FA72F5C41B7F94A300BDB417 /* paper.png */,
 			);
 			name = image;
-			sourceTree = "<group>";
-		};
-		FA81546D1BC4299100E99BFF /* TestWrap */ = {
-			isa = PBXGroup;
-			children = (
-				FA81546E1BC429B200E99BFF /* TestWrapViewVC.h */,
-				FA81546F1BC429B200E99BFF /* TestWrapViewVC.m */,
-				FA9BC7341BC438CC00A98A6A /* TestWrapViewVC.xib */,
-				FA8154711BC429C500E99BFF /* TextWrapView.h */,
-				FA8154721BC429C500E99BFF /* TextWrapView.m */,
-			);
-			name = TestWrap;
 			sourceTree = "<group>";
 		};
 		FA915A8F1B89AE990017F336 /* RangeSlider */ = {
@@ -1856,7 +1835,6 @@
 				03B3645E1B60F815001C7264 /* 77ef19d8e9.gif.011.gif in Resources */,
 				FAB299EF1B8B6FA60082D76A /* lighton.png in Resources */,
 				BE2510651B6DEF5100A9EFBD /* frame_23_delay-0.25s.gif in Resources */,
-				FA9BC7351BC438CC00A98A6A /* TestWrapViewVC.xib in Resources */,
 				03B363E41B60892E001C7264 /* BasicView.xib in Resources */,
 				03B364751B60F815001C7264 /* 77ef19d8e9.gif.034.gif in Resources */,
 				BE25105D1B6DEF5100A9EFBD /* frame_15_delay-0.25s.gif in Resources */,
@@ -1975,7 +1953,6 @@
 				FAF9A9B11BAC8426005F1278 /* HTMLComment.m in Sources */,
 				03C9EDEE1B58E712007C0F9D /* Player.m in Sources */,
 				036D984A1B5CCF8D00E05377 /* DemoSelector.m in Sources */,
-				FA8154731BC429C500E99BFF /* TextWrapView.m in Sources */,
 				03E4B4161B6F12D100FAA769 /* DemoPlanet.m in Sources */,
 				03095DEC1B85B748004EB2D1 /* SliderRangle.m in Sources */,
 				FAADBC0B1B989CE500ADEC2A /* ScrollViewZoomToolbar.m in Sources */,
@@ -2017,7 +1994,6 @@
 				03F6B5241B54A53F00E9B3FE /* main.m in Sources */,
 				03C9EDF41B59E3F0007C0F9D /* NSArrayTruyVan_2.m in Sources */,
 				FAADBC101B98A62700ADEC2A /* ScrollViewContentSize.m in Sources */,
-				FA8154701BC429B200E99BFF /* TestWrapViewVC.m in Sources */,
 				03C08A7A1B5744D3005BDCC8 /* IWeather.m in Sources */,
 				03C9EDE81B589673007C0F9D /* NSArrayTruyVan_1.m in Sources */,
 				0343C3D31B73689500E0BBD1 /* DropBall.m in Sources */,
