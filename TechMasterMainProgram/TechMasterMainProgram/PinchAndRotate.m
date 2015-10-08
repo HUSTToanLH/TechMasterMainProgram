@@ -9,7 +9,7 @@
 #import "PinchAndRotate.h"
 #import "UIColor+Extend.h"
 
-@interface PinchAndRotate ()
+@interface PinchAndRotate ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -20,6 +20,14 @@
     UIRotationGestureRecognizer *rotate;
 //    UITabBarController *tabbar;
     CGFloat height, width, margin, buttonWidth;
+    BOOL shouldRecognizeSimultaneouslyWithGestureRecognizer;
+    BOOL shouldRequireFailureOfGestureRecognizer;
+    BOOL shouldBeRequiredToFailByGestureRecognizer;
+    
+    UIButton *buttonOne, *buttonTwo, *buttonThree, *buttonFour, *buttonFive, *buttonSix, *buttonSeven;
+    int activeNumber;
+    BOOL pinchGes;
+    UIView *tabbar;
 }
 
 - (void)viewDidLoad {
@@ -32,10 +40,12 @@
     height = self.view.bounds.size.height - statusBarHeight - navigationHeight;
     width = self.view.bounds.size.width;
     margin = 2;
-    buttonWidth = (width - 6*margin)/7;
+    buttonWidth = (width - 4*margin)/5;
+    pinchGes = YES;
     
     [self initImage];
     [self initButtonBar];
+    [self setActiveNumber:0];
 }
 
 -(void)initImage
@@ -55,73 +65,100 @@
 }
 
 -(void)initButtonBar{
-    UIView *tabbar = [[UIView alloc] initWithFrame:CGRectMake(0, height - 40, self.view.bounds.size.width, 40)];
-    tabbar.backgroundColor = [UIColor redColor];
+    tabbar = [[UIView alloc] initWithFrame:CGRectMake(0, height - 40, self.view.bounds.size.width, 40)];
+    tabbar.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:tabbar];
     
-    UIButton *buttonOne = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, buttonWidth, 40)];
-    buttonOne.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
+    buttonOne = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, buttonWidth, 40)];
+    buttonOne.tag = 1;
+    [buttonOne setTitle:@"dft" forState:UIControlStateNormal];
     [buttonOne addTarget:self action:@selector(onClickButtonOne) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *buttonTwo = [[UIButton alloc] initWithFrame:CGRectMake(buttonWidth + margin, 0, buttonWidth, 40)];
-    buttonTwo.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
+    buttonTwo = [[UIButton alloc] initWithFrame:CGRectMake(buttonWidth + margin, 0, buttonWidth, 40)];
+    buttonTwo.tag = 2;
+    [buttonTwo setTitle:@"s Pi" forState:UIControlStateNormal];
     [buttonTwo addTarget:self action:@selector(onClickButtonTwo) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *buttonThree = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*2, 0, buttonWidth, 40)];
-    buttonThree.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
-    [buttonThree addTarget:self action:@selector(onClickButtonThree) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIButton *buttonFour = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*3, 0, buttonWidth, 40)];
-    buttonFour.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
+    buttonFour = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*2, 0, buttonWidth, 40)];
+    buttonFour.tag = 4;
+    [buttonFour setTitle:@"r1 Pi" forState:UIControlStateNormal];
     [buttonFour addTarget:self action:@selector(onClickButtonFour) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *buttonFive = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*4, 0, buttonWidth, 40)];
-    buttonFive.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
+    buttonFive = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*3, 0, buttonWidth, 40)];
+    buttonFive.tag = 5;
+    [buttonFive setTitle:@"r Ro" forState:UIControlStateNormal];
     [buttonFive addTarget:self action:@selector(onClickButtonFive) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *buttonSix = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*5, 0, buttonWidth, 40)];
-    buttonSix.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
+    buttonSix = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*4, 0, buttonWidth, 40)];
+    buttonSix.tag = 6;
+    [buttonSix setTitle:@"bR Ro" forState:UIControlStateNormal];
     [buttonSix addTarget:self action:@selector(onClickButtonSix) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIButton *buttonSeven = [[UIButton alloc] initWithFrame:CGRectMake((buttonWidth + margin)*6, 0, buttonWidth, 40)];
-    buttonSeven.backgroundColor = [[UIColor alloc] initColorHex:@"#7dab4f" alpha:1];
-    [buttonSeven addTarget:self action:@selector(onClickButtonSeven) forControlEvents:UIControlEventTouchUpInside];
     
     [tabbar addSubview:buttonOne];
     [tabbar addSubview:buttonTwo];
-    [tabbar addSubview:buttonThree];
     [tabbar addSubview:buttonFour];
     [tabbar addSubview:buttonFive];
     [tabbar addSubview:buttonSix];
-    [tabbar addSubview:buttonSeven];
 }
 
 -(void)onClickButtonOne{
+    [self setActiveNumber:1];
     NSLog(@"onClickButtonOne");
 }
 
 -(void)onClickButtonTwo{
+    [self setActiveNumber:2];
+    if (shouldRecognizeSimultaneouslyWithGestureRecognizer == true) {
+        shouldRecognizeSimultaneouslyWithGestureRecognizer =  false;
+        [buttonTwo setTitle:@"s Pi" forState:UIControlStateNormal];
+    }
+    else{
+        shouldRecognizeSimultaneouslyWithGestureRecognizer = true;
+        [buttonTwo setTitle:@"s Ro" forState:UIControlStateNormal];
+    }
+
     NSLog(@"onClickButtonTwo");
 }
 
--(void)onClickButtonThree{
-    NSLog(@"onClickButtonThree");
-}
-
 -(void)onClickButtonFour{
+    [self setActiveNumber:4];
+    if (pinchGes == YES) {
+        [pinch requireGestureRecognizerToFail:rotate];
+        [buttonFour setTitle:@"r1 Ro" forState:UIControlStateNormal];
+        pinchGes = NO;
+    }else{
+        [rotate requireGestureRecognizerToFail:pinch];
+        [buttonFour setTitle:@"r1 Pi" forState:UIControlStateNormal];
+        pinchGes = YES;
+    }
+    
     NSLog(@"onClickButtonFour");
 }
 
 -(void)onClickButtonFive{
+    [self setActiveNumber:5];
+    if (shouldRequireFailureOfGestureRecognizer == true) {
+        shouldRequireFailureOfGestureRecognizer =  false;
+        [buttonFive setTitle:@"r Pi" forState:UIControlStateNormal];
+    }
+    else{
+        shouldRequireFailureOfGestureRecognizer = true;
+        [buttonFive setTitle:@"r Ro" forState:UIControlStateNormal];
+    }
     NSLog(@"onClickButtonFive");
 }
 
 -(void)onClickButtonSix{
+    [self setActiveNumber:6];
+    if (shouldBeRequiredToFailByGestureRecognizer == true) {
+        shouldBeRequiredToFailByGestureRecognizer =  false;
+        [buttonSix setTitle:@"bR Pi" forState:UIControlStateNormal];
+    }
+    else{
+        shouldBeRequiredToFailByGestureRecognizer = true;
+        [buttonSix setTitle:@"bR Ro" forState:UIControlStateNormal];
+    }
     NSLog(@"onClickButtonSix");
-}
-
--(void)onClickButtonSeven{
-    NSLog(@"onClickButtonSeven");
 }
 
 -(void)pinchImage:(UIPinchGestureRecognizer*)gesture{
@@ -147,6 +184,7 @@
     CGAffineTransform t = pretty.transform;
     t = CGAffineTransformMakeScale(scale, scale);
     pretty.transform = t;
+    NSLog(@"Pinch");
 }
 
 -(void)rotateImage:(UIRotationGestureRecognizer*)gesture{
@@ -161,6 +199,32 @@
     t.m34 = -0.005;
     t = CATransform3DRotate(t, rotation, 0.0, 0.0, 1.0);
     pretty.layer.transform = t;
+    NSLog(@"Rotate");
+}
+
+//-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+//    return shouldRecognizeSimultaneouslyWithGestureRecognizer;
+//}
+
+//-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+//    if ([gestureRecognizer isMemberOfClass:[UIPinchGestureRecognizer class]] && [otherGestureRecognizer isKindOfClass:[UIRotationGestureRecognizer class]]) {
+//        return shouldRequireFailureOfGestureRecognizer;
+//    }
+//    else{
+//        return !shouldRequireFailureOfGestureRecognizer;
+//    }
+//}
+
+-(void)setActiveNumber:(int)number{
+    activeNumber = number;
+    for (UIButton *btn in [tabbar subviews]) {
+        if (btn.tag == activeNumber) {
+            btn.backgroundColor = [UIColor greenColor];
+        }
+        else{
+            btn.backgroundColor = [UIColor grayColor];
+        }
+    }
 }
 
 @end

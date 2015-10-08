@@ -48,7 +48,8 @@
     NSDictionary* scrollView = @{SECTION: @"UIScrollView", MENU:@[
                                     @{TITLE: @"ScrollViewZoomNavi", CLASS: @"ScrollViewZoomNavi"},
                                     @{TITLE: @"ScrollViewZoomToolbar", CLASS: @"ScrollViewZoomToolbar"},
-                                    @{TITLE: @"ScrollViewContentSize", CLASS: @"ScrollViewContentSize"}
+                                    @{TITLE: @"ScrollViewContentSize", CLASS: @"ScrollViewContentSize"},
+                                    @{TITLE: @"LensZoom", CLASS: @"LensZoom"}
                                     ]};
     
     NSDictionary* multiTouch = @{SECTION: @"MultiTouch", MENU:@[
