@@ -285,6 +285,7 @@
 		FA915A9E1B89BA710017F336 /* trackWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = FA915A9D1B89BA710017F336 /* trackWhite.png */; };
 		FA915AA01B89BF710017F336 /* thumbSilver10.png in Resources */ = {isa = PBXBuildFile; fileRef = FA915A9F1B89BF710017F336 /* thumbSilver10.png */; };
 		FA915AA21B89C4090017F336 /* Korean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA915AA11B89C4090017F336 /* Korean.mp3 */; };
+		FA99B6CF1BC82E1E00046479 /* GraduatePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FA99B6CE1BC82E1E00046479 /* GraduatePoint.m */; settings = {ASSET_TAGS = (); }; };
 		FAAC378D1B76F5560000B694 /* SeeYouAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378C1B76F5560000B694 /* SeeYouAgain.mp3 */; };
 		FAAC37921B76F5640000B694 /* sea1.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378E1B76F5640000B694 /* sea1.png */; };
 		FAAC37931B76F5640000B694 /* sea2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAC378F1B76F5640000B694 /* sea2.png */; };
@@ -663,6 +664,8 @@
 		FA915A9D1B89BA710017F336 /* trackWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trackWhite.png; sourceTree = "<group>"; };
 		FA915A9F1B89BF710017F336 /* thumbSilver10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbSilver10.png; sourceTree = "<group>"; };
 		FA915AA11B89C4090017F336 /* Korean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Korean.mp3; sourceTree = "<group>"; };
+		FA99B6CD1BC82E1E00046479 /* GraduatePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraduatePoint.h; sourceTree = "<group>"; };
+		FA99B6CE1BC82E1E00046479 /* GraduatePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraduatePoint.m; sourceTree = "<group>"; };
 		FAAC378C1B76F5560000B694 /* SeeYouAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SeeYouAgain.mp3; sourceTree = "<group>"; };
 		FAAC378E1B76F5640000B694 /* sea1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea1.png; sourceTree = "<group>"; };
 		FAAC378F1B76F5640000B694 /* sea2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea2.png; sourceTree = "<group>"; };
@@ -1028,6 +1031,7 @@
 		03C9EDE51B5895BF007C0F9D /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				FA99B6CC1BC82DCB00046479 /* CalculatorPoint */,
 				037C3E271B7EDAED00F33AD6 /* NSMutableArray */,
 				037C3E261B7EDAD200F33AD6 /* TestLineVIew */,
 				037C3E251B7EDAA100F33AD6 /* QuickSortC&NS */,
@@ -1327,6 +1331,15 @@
 				FA915A951B89B2800017F336 /* SliderBasic.m */,
 			);
 			name = BasicSlider;
+			sourceTree = "<group>";
+		};
+		FA99B6CC1BC82DCB00046479 /* CalculatorPoint */ = {
+			isa = PBXGroup;
+			children = (
+				FA99B6CD1BC82E1E00046479 /* GraduatePoint.h */,
+				FA99B6CE1BC82E1E00046479 /* GraduatePoint.m */,
+			);
+			name = CalculatorPoint;
 			sourceTree = "<group>";
 		};
 		FA9AA4E41B75FD50007C4285 /* CampFire */ = {
@@ -1956,6 +1969,7 @@
 				FADE94E41B933F9D00419409 /* FlappyBirdClone.m in Sources */,
 				039729341B783D220076F2C2 /* ArrayDictionary.m in Sources */,
 				03B364111B60C6CE001C7264 /* FlyingBird.m in Sources */,
+				FA99B6CF1BC82E1E00046479 /* GraduatePoint.m in Sources */,
 				FAF9A9BA1BAC8426005F1278 /* HTMLPreprocessedInputStream.m in Sources */,
 				03EEDD311B788EF000011E35 /* AutoTableCell.m in Sources */,
 				03F6B5511B54A61A00E9B3FE /* BootLogic.m in Sources */,

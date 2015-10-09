@@ -42,7 +42,8 @@
 //                                    @{TITLE: @"QuickSort", CLASS: @"QuickSort"},
 //                                    @{TITLE: @"ArrayDictionary", CLASS: @"ArrayDictionary"},
                                     @{TITLE: @"TestLineView", CLASS: @"TestLineView"},
-                                    @{TITLE: @"MutableArray", CLASS: @"MutableArrayCategory"}
+                                    @{TITLE: @"MutableArray", CLASS: @"MutableArrayCategory"},
+                                     @{TITLE: @"GraduatePoint", CLASS: @"GraduatePoint"}
                                     ]};
     
     NSDictionary* scrollView = @{SECTION: @"UIScrollView", MENU:@[
